@@ -1,0 +1,137 @@
+fileFormatVersion: 2
+guid: 097f97feb2814734b8b01b1f4db3194a
+timeCreated: 1458672929
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: UBX_CartSmall_01
+    100004: UBX_CartSmall_02
+    100006: UBX_CartSmall_03
+    100008: UBX_CartSmall_04
+    100010: UBX_CartSmall_05
+    100012: UBX_CartSmall_06
+    100014: UBX_CartSmall_07
+    100016: UBX_CartSmall_08
+    100018: UCX_Cart_Small_01
+    100020: UCX_Cart_Small_02
+    100022: UCX_Cart_Small_03
+    100024: UCX_Cart_Small_04
+    400000: //RootNode
+    400002: UBX_CartSmall_01
+    400004: UBX_CartSmall_02
+    400006: UBX_CartSmall_03
+    400008: UBX_CartSmall_04
+    400010: UBX_CartSmall_05
+    400012: UBX_CartSmall_06
+    400014: UBX_CartSmall_07
+    400016: UBX_CartSmall_08
+    400018: UCX_Cart_Small_01
+    400020: UCX_Cart_Small_02
+    400022: UCX_Cart_Small_03
+    400024: UCX_Cart_Small_04
+    2300000: //RootNode
+    2300002: UBX_CartSmall_01
+    2300004: UBX_CartSmall_02
+    2300006: UBX_CartSmall_03
+    2300008: UBX_CartSmall_04
+    2300010: UBX_CartSmall_05
+    2300012: UBX_CartSmall_06
+    2300014: UBX_CartSmall_07
+    2300016: UBX_CartSmall_08
+    2300018: UCX_Cart_Small_01
+    2300020: UCX_Cart_Small_02
+    2300022: UCX_Cart_Small_03
+    2300024: UCX_Cart_Small_04
+    3300000: //RootNode
+    3300002: UBX_CartSmall_01
+    3300004: UBX_CartSmall_02
+    3300006: UBX_CartSmall_03
+    3300008: UBX_CartSmall_04
+    3300010: UBX_CartSmall_05
+    3300012: UBX_CartSmall_06
+    3300014: UBX_CartSmall_07
+    3300016: UBX_CartSmall_08
+    3300018: UCX_Cart_Small_01
+    3300020: UCX_Cart_Small_02
+    3300022: UCX_Cart_Small_03
+    3300024: UCX_Cart_Small_04
+    4300000: CartSmall
+    4300002: UBX_CartSmall_01
+    4300004: UBX_CartSmall_02
+    4300006: UBX_CartSmall_03
+    4300008: UBX_CartSmall_04
+    4300010: UBX_CartSmall_05
+    4300012: UBX_CartSmall_06
+    4300014: UBX_CartSmall_07
+    4300016: UBX_CartSmall_08
+    4300018: UCX_Cart_Small_04
+    4300020: UCX_Cart_Small_03
+    4300022: UCX_Cart_Small_02
+    4300024: UCX_Cart_Small_01
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

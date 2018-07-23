@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 36b688a0d57e1bd45820d51a82e35351
+timeCreated: 1483544834
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BRAIN
+    100002: ESOFAGO
+    100004: EYED
+    100006: EYEI
+    100008: GLOBULO
+    100010: HEART
+    100012: HIGADO
+    100014: INTESTINES
+    100016: KIDNEYD
+    100018: KIDNEYI
+    100020: //RootNode
+    100022: polySurface1
+    100024: polySurface2
+    100026: polySurface3
+    100028: polySurface4
+    100030: PULMOND
+    100032: PULMONI
+    100034: SKELETON
+    100036: transform1
+    400000: BRAIN
+    400002: ESOFAGO
+    400004: EYED
+    400006: EYEI
+    400008: GLOBULO
+    400010: HEART
+    400012: HIGADO
+    400014: INTESTINES
+    400016: KIDNEYD
+    400018: KIDNEYI
+    400020: //RootNode
+    400022: polySurface1
+    400024: polySurface2
+    400026: polySurface3
+    400028: polySurface4
+    400030: PULMOND
+    400032: PULMONI
+    400034: SKELETON
+    400036: transform1
+    2300000: BRAIN
+    2300002: ESOFAGO
+    2300004: EYED
+    2300006: EYEI
+    2300008: HEART
+    2300010: HIGADO
+    2300012: INTESTINES
+    2300014: KIDNEYD
+    2300016: KIDNEYI
+    2300018: polySurface1
+    2300020: polySurface2
+    2300022: polySurface3
+    2300024: polySurface4
+    2300026: PULMOND
+    2300028: PULMONI
+    2300030: SKELETON
+    3300000: BRAIN
+    3300002: ESOFAGO
+    3300004: EYED
+    3300006: EYEI
+    3300008: HEART
+    3300010: HIGADO
+    3300012: INTESTINES
+    3300014: KIDNEYD
+    3300016: KIDNEYI
+    3300018: polySurface1
+    3300020: polySurface2
+    3300022: polySurface3
+    3300024: polySurface4
+    3300026: PULMOND
+    3300028: PULMONI
+    3300030: SKELETON
+    4300000: HIGADO
+    4300002: INTESTINES
+    4300004: KIDNEYD
+    4300006: KIDNEYI
+    4300008: HEART
+    4300010: PULMOND
+    4300012: PULMONI
+    4300014: ESOFAGO
+    4300016: BRAIN
+    4300018: EYEI
+    4300020: EYED
+    4300022: polySurface1
+    4300024: polySurface2
+    4300026: polySurface3
+    4300028: polySurface4
+    4300030: SKELETON
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5e15c32bab2709041964c56b109f13cc
+timeCreated: 1493685710
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: PlainGermanica
+  fontNames:
+  - PlainGermanica
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,183 @@
+fileFormatVersion: 2
+guid: ae7b041b6cf2e994f812d3ace26d8634
+timeCreated: 1483715390
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ANTEBRAZO
+    100002: ANTEBRAZO1
+    100004: BRAZO
+    100006: BRAZO1
+    100008: CLAVICULA
+    100010: CLAVICULA1
+    100012: COLIUMNA
+    100014: COSTILLAS
+    100016: COXIS
+    100018: CRANEO
+    100020: ESTERNON
+    100022: FEMUR
+    100024: FEMUR1
+    100026: MANO
+    100028: MANO1
+    100030: OMOPLATO
+    100032: OMOPLATO1
+    100034: PIE
+    100036: PIE1
+    100038: PIERNA
+    100040: PIERNA235
+    100042: QUIJADA
+    100044: //RootNode
+    400000: ANTEBRAZO
+    400002: ANTEBRAZO1
+    400004: BRAZO
+    400006: BRAZO1
+    400008: CLAVICULA
+    400010: CLAVICULA1
+    400012: COLIUMNA
+    400014: COSTILLAS
+    400016: COXIS
+    400018: CRANEO
+    400020: ESTERNON
+    400022: FEMUR
+    400024: FEMUR1
+    400026: MANO
+    400028: MANO1
+    400030: OMOPLATO
+    400032: OMOPLATO1
+    400034: PIE
+    400036: PIE1
+    400038: PIERNA
+    400040: PIERNA235
+    400042: QUIJADA
+    400044: //RootNode
+    2300000: ANTEBRAZO
+    2300002: ANTEBRAZO1
+    2300004: BRAZO
+    2300006: BRAZO1
+    2300008: CLAVICULA
+    2300010: CLAVICULA1
+    2300012: COLIUMNA
+    2300014: COSTILLAS
+    2300016: COXIS
+    2300018: CRANEO
+    2300020: ESTERNON
+    2300022: FEMUR
+    2300024: FEMUR1
+    2300026: MANO
+    2300028: MANO1
+    2300030: OMOPLATO
+    2300032: OMOPLATO1
+    2300034: PIE
+    2300036: PIE1
+    2300038: PIERNA
+    2300040: PIERNA235
+    2300042: QUIJADA
+    3300000: ANTEBRAZO
+    3300002: ANTEBRAZO1
+    3300004: BRAZO
+    3300006: BRAZO1
+    3300008: CLAVICULA
+    3300010: CLAVICULA1
+    3300012: COLIUMNA
+    3300014: COSTILLAS
+    3300016: COXIS
+    3300018: CRANEO
+    3300020: ESTERNON
+    3300022: FEMUR
+    3300024: FEMUR1
+    3300026: MANO
+    3300028: MANO1
+    3300030: OMOPLATO
+    3300032: OMOPLATO1
+    3300034: PIE
+    3300036: PIE1
+    3300038: PIERNA
+    3300040: PIERNA235
+    3300042: QUIJADA
+    4300000: COLIUMNA
+    4300002: COSTILLAS
+    4300004: QUIJADA
+    4300006: ESTERNON
+    4300008: OMOPLATO1
+    4300010: OMOPLATO
+    4300012: COXIS
+    4300014: CLAVICULA1
+    4300016: CLAVICULA
+    4300018: MANO1
+    4300020: ANTEBRAZO1
+    4300022: BRAZO1
+    4300024: BRAZO
+    4300026: MANO
+    4300028: ANTEBRAZO
+    4300030: PIERNA235
+    4300032: PIERNA
+    4300034: PIE1
+    4300036: PIE
+    4300038: FEMUR1
+    4300040: FEMUR
+    4300042: CRANEO
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
