@@ -19,7 +19,8 @@ public class Recurso : MonoBehaviour {
     {
         Texto,
         Pregunta,
-        VoF
+        VoF,
+        Pares
     }
 
     class Contenido
@@ -74,6 +75,8 @@ public class Recurso : MonoBehaviour {
                     return TipoContenido.Pregunta;
                 case "vof":
                     return TipoContenido.VoF;
+                case "pares":
+                    return TipoContenido.Pares;
                 default:
                     return TipoContenido.Texto;
             }
@@ -177,8 +180,11 @@ public class Recurso : MonoBehaviour {
                     case "data":
                         this.Data = j.str;
                         break;
-                    case "correcto":
-                        this.Correcto = j.b;
+                    case "data_secundaria":
+                        this.DataSecundaria = j.str;
+                        break;
+                    case "tipo":
+                        this.Tipo= j.str;
                         break;
                 }
             }
@@ -188,7 +194,10 @@ public class Recurso : MonoBehaviour {
         public string Data;
 
         //Si la opción es o no considerada correcta
-        public bool Correcto;
+        public string DataSecundaria;
+
+        //Tipo
+        public string Tipo;
     }
 
     //El código que representa a este recurso en el WS
@@ -424,30 +433,20 @@ public class Recurso : MonoBehaviour {
 
     private bool UsesOptionListArea(Contenido contenido)
     {
-        return contenido.Tipo == TipoContenido.Pregunta || contenido.Tipo == TipoContenido.VoF;
+        return contenido.Tipo == TipoContenido.Pregunta || contenido.Tipo == TipoContenido.VoF || contenido.Tipo == TipoContenido.Pares;
     }
 
     private void FillOptionList(Contenido contenido)
     {
-        switch(contenido.Tipo)
+        GameObject bp = Instantiate(_blueprintPrefabs[contenido.Tipo]);
+        IRenderOptionFactory factory = bp.GetComponent<RenderOption>().GetFactory();
+        RenderOption[] options = factory.BuildRenderOptions(contenido.Opciones);
+
+        foreach(RenderOption Opt in options)
         {
-            case TipoContenido.Pregunta:
-                foreach(OpcionContenido opcion in contenido.Opciones)
-                {
-                    GameObject listItem = MakeRenderOptionListItem(opcion, contenido.Tipo);
-                    ListController.Add(listItem);
-                }
-                break;
-            case TipoContenido.VoF:
-                foreach (OpcionContenido opcion in contenido.Opciones)
-                {
-                    GameObject listItem = MakeRenderOptionListItem(opcion, contenido.Tipo);
-                    ListController.Add(listItem);
-                }
-                break;
-            default:
-                break;
+            ListController.Add(Opt.gameObject);
         }
+
     }
 
     /// <summary>
@@ -462,13 +461,5 @@ public class Recurso : MonoBehaviour {
             return;
 
         ContentImage.overrideSprite = Sprite.Create(Image, new Rect(0, 0, Image.width, Image.height), new Vector2(0, 0));
-    }
-
-    private GameObject MakeRenderOptionListItem(OpcionContenido Opcion, TipoContenido Tipo)
-    {
-        GameObject bp = Instantiate(_blueprintPrefabs[Tipo]);
-        bp.GetComponent<RenderOption>().Assign(Opcion); //Assumes the blueprint resource has a RenderOption added
-
-        return bp;
     }
 }

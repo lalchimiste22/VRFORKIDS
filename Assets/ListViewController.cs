@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ListViewController : MonoBehaviour {
 
-    private List<GameObject> ListItems;
+    private List<GameObject> ListItems = new List<GameObject>();
 
     private void Start()
     {
-        ListItems = new List<GameObject>();
+        //ListItems = new List<GameObject>();
     }
 
     public void Clear()

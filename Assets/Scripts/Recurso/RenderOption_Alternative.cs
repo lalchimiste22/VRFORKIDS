@@ -2,30 +2,55 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RenderOption_Alternative : RenderOption {
+public class RenderOption_AlternativeFactory : IRenderOptionFactory
+{
+    private GameObject Blueprint;
 
-    private UnityEngine.UI.Toggle Toggle;
-    private UnityEngine.UI.Text Label;
-    private bool bNeedsInit = true;
-    
-    private void Initialize()
+    public RenderOption_AlternativeFactory(GameObject InBlueprint)
     {
-        Toggle = GetComponent<UnityEngine.UI.Toggle>();
-        Label = GetComponentInChildren<UnityEngine.UI.Text>(); //Label is on a children GameObject
-
-        if (!Toggle || !Label)
-            Debug.LogError("Could not find UI elements");
-
-        bNeedsInit = false;
+        if(!InBlueprint.GetComponent<RenderOption_Alternative>())
+        {
+            Debug.LogError("Expected RenderOption_Alternative component on Blueprint GameObject, not found");
+        }
+        else
+        {
+            Blueprint = InBlueprint;
+        }
     }
 
-    public override void Assign(Recurso.OpcionContenido Option)
+    public RenderOption[] BuildRenderOptions(Recurso.OpcionContenido[] Options)
     {
-        if (bNeedsInit)
-            Initialize();
+        List<RenderOption> RenderOptions = new List<RenderOption>();
 
+        foreach(Recurso.OpcionContenido Opt in Options)
+        {
+            GameObject instantiated = GameObject.Instantiate(Blueprint);
+            RenderOption_Alternative alternative = instantiated.GetComponent<RenderOption_Alternative>();
+
+            alternative.Assign(Opt);
+            RenderOptions.Add(alternative);
+        }
+
+        return RenderOptions.ToArray();
+    }
+}
+
+public class RenderOption_Alternative : RenderOption {
+
+    public UnityEngine.UI.Toggle Toggle;
+    public UnityEngine.UI.Text Label;
+    public UnityEngine.UI.Text IndexLabel;
+
+    public void Assign(Recurso.OpcionContenido Option)
+    {
         //We should be assigned to a toggle, so we can search it and init the values
         Toggle.isOn = false;
         Label.text = Option.Data;
     }
+
+    public override IRenderOptionFactory GetFactory()
+    {
+        return new RenderOption_AlternativeFactory(this.gameObject);
+    }
+
 }

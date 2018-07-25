@@ -83,7 +83,7 @@ public class MyManager : MonoBehaviour {
 
         //Do a WWW call to the webserver
         string url = baseUrl + "jugadores/" + PlayerId + "/recursos/" + string.Join(",", codes.ToArray());
-
+        Debug.Log("Calling URL:" + url);
         using (WWW www = new WWW(url))
         {
             yield return www;
