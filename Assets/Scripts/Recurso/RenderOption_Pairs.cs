@@ -54,6 +54,7 @@ public class RenderOption_Pairs : RenderOption {
 
     enum PortType
     {
+        Unknown,
         Text,
         Image
     }
@@ -82,17 +83,96 @@ public class RenderOption_Pairs : RenderOption {
         return new RenderOption_PairsFactory(this.gameObject);
     }
     
-    public void SetupPort(PortLocation Location, Recurso.OpcionContenido opcion)
+    public void SetupPort(PortLocation Location, Recurso.OpcionContenido Opcion)
     {
-        //For now, just setup the name
+        PortType type = GetPortTypeForLocation(Location, Opcion);
+
+        UnityEngine.UI.Text Label = null;
+        string data = "";
+        
+        //Obtain the correct label to use
         switch(Location)
         {
             case PortLocation.Left:
-                LabelLeft.text = opcion.Data;
+                Label = LabelLeft;
+                data = Opcion.Data;
                 break;
             case PortLocation.Right:
-                LabelRight.text = opcion.DataSecundaria;
+                Label = LabelRight;
+                data = Opcion.DataSecundaria;
                 break;
         }
+
+        switch(type)
+        {
+            case PortType.Text:
+                Label.text = data;
+                break;
+            case PortType.Image:
+                Label.text = "Cargando";
+
+                //Clear escaped strings
+                data = data.Replace("\\", "");
+
+                //Request a download
+                BeginLoadPortImage(data, Location);
+
+                break;
+            default:
+                break;
+        }
+    }
+
+    private PortType GetPortTypeForLocation(PortLocation location, Recurso.OpcionContenido opcion)
+    {
+        string[] types = opcion.Tipo.Split("|".ToCharArray());
+
+        //Should have more than 1 index
+        if (types.Length <= 1)
+            return PortType.Unknown;
+
+        string[] portTypes = types[1].Split("-".ToCharArray());
+
+        //Same here, for this specific type of render option, each port type is separated via "-" like this: pares|txt-img
+        if (portTypes.Length <= 1)
+            return PortType.Unknown;
+
+        int index = location == PortLocation.Left ? 0 : 1;
+        return portTypes[index].Equals("txt") ? PortType.Text : portTypes[index].Equals("img") ? PortType.Image : PortType.Unknown;
+    }
+
+    private void BeginLoadPortImage(string url, PortLocation Location)
+    {
+        StartCoroutine(LoadImage(url, Location));
+    }
+
+    private IEnumerator LoadImage(string ImageUrl, PortLocation Location)
+    {
+        Debug.Log("Starting Laod Image from url: " + ImageUrl + " on port location: " + Location);
+        using (WWW www = new WWW(ImageUrl))
+        {
+            yield return www;
+
+            if (www.error != null)
+            {
+                Debug.LogError(www.error);
+            }
+            else
+            {
+                FinishLoadImage(www.texture, Location);
+            }
+        }
+    }
+
+    private void FinishLoadImage(Texture2D Tex, PortLocation Location)
+    {
+        UnityEngine.UI.Image Img = Location == PortLocation.Left ? ImageLeft : ImageRight;
+        Img.overrideSprite = Sprite.Create(Tex, new Rect(0, 0, Tex.width, Tex.height), new Vector2(0, 0));
+
+        //Remember to hide the text showing "Loading"
+        UnityEngine.UI.Text Label = Location == PortLocation.Left ? LabelLeft : LabelRight;
+        Label.text = "";
+
+        Debug.Log("Image Loaded: " + Tex);
     }
 }
