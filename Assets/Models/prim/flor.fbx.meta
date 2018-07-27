@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: f110e87416003a04f9ff382f8d47677b
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: antera
+    100002: antera.002
+    100004: antera.004
+    100006: antera.005
+    100008: antera.006
+    100010: estambre
+    100012: estambre.001
+    100014: estambre.002
+    100016: estambre.003
+    100018: estambre.004
+    100020: //RootNode
+    100022: ovulo
+    100024: petalo
+    100026: petalo.001
+    100028: petalo.002
+    100030: petalo.003
+    100032: petalo.004
+    100034: petalo.005
+    100036: petalo.006
+    100038: pistilo
+    100040: pistilo bg
+    100042: saco
+    100044: saco.001
+    100046: saco.002
+    100048: saco.003
+    100050: saco.004
+    100052: semilla
+    100054: tallo
+    400000: antera
+    400002: antera.002
+    400004: antera.004
+    400006: antera.005
+    400008: antera.006
+    400010: estambre
+    400012: estambre.001
+    400014: estambre.002
+    400016: estambre.003
+    400018: estambre.004
+    400020: //RootNode
+    400022: ovulo
+    400024: petalo
+    400026: petalo.001
+    400028: petalo.002
+    400030: petalo.003
+    400032: petalo.004
+    400034: petalo.005
+    400036: petalo.006
+    400038: pistilo
+    400040: pistilo bg
+    400042: saco
+    400044: saco.001
+    400046: saco.002
+    400048: saco.003
+    400050: saco.004
+    400052: semilla
+    400054: tallo
+    2100000: material flor
+    2300000: antera
+    2300002: antera.002
+    2300004: antera.004
+    2300006: antera.005
+    2300008: antera.006
+    2300010: estambre
+    2300012: estambre.001
+    2300014: estambre.002
+    2300016: estambre.003
+    2300018: estambre.004
+    2300020: ovulo
+    2300022: petalo
+    2300024: petalo.001
+    2300026: petalo.002
+    2300028: petalo.003
+    2300030: petalo.004
+    2300032: petalo.005
+    2300034: petalo.006
+    2300036: pistilo
+    2300038: pistilo bg
+    2300040: saco
+    2300042: saco.001
+    2300044: saco.002
+    2300046: saco.003
+    2300048: saco.004
+    2300050: semilla
+    2300052: tallo
+    3300000: antera
+    3300002: antera.002
+    3300004: antera.004
+    3300006: antera.005
+    3300008: antera.006
+    3300010: estambre
+    3300012: estambre.001
+    3300014: estambre.002
+    3300016: estambre.003
+    3300018: estambre.004
+    3300020: ovulo
+    3300022: petalo
+    3300024: petalo.001
+    3300026: petalo.002
+    3300028: petalo.003
+    3300030: petalo.004
+    3300032: petalo.005
+    3300034: petalo.006
+    3300036: pistilo
+    3300038: pistilo bg
+    3300040: saco
+    3300042: saco.001
+    3300044: saco.002
+    3300046: saco.003
+    3300048: saco.004
+    3300050: semilla
+    3300052: tallo
+    4300000: antera.006
+    4300002: saco.004
+    4300004: estambre.004
+    4300006: estambre.003
+    4300008: saco.003
+    4300010: antera.005
+    4300012: antera.004
+    4300014: saco.002
+    4300016: estambre.002
+    4300018: estambre.001
+    4300020: saco.001
+    4300022: antera.002
+    4300024: petalo.006
+    4300026: petalo.005
+    4300028: petalo.004
+    4300030: petalo.003
+    4300032: petalo.002
+    4300034: petalo.001
+    4300036: antera
+    4300038: petalo
+    4300040: pistilo
+    4300042: saco
+    4300044: semilla
+    4300046: ovulo
+    4300048: pistilo bg
+    4300050: estambre
+    4300052: tallo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 20
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

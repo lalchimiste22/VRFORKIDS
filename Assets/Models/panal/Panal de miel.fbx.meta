@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 19921694fc19b854bb17d9dd8f235cf3
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: ' mielhoneycomb top tierra var tres'
+    100002: Armature
+    100004: bg auxiliar
+    100006: Circle proceduralp1
+    100008: Circle proceduralp2
+    100010: Circle proceduralp3
+    100012: Circle proceduralp4
+    100014: Circle proceduralp5
+    100016: honeycomb cielo
+    100018: honeycomb cielo prop dos
+    100020: honeycomb cielo prop tres
+    100022: honeycomb cielo prop uno
+    100024: honeycomb tierra
+    100026: honeycomb tierra var tres
+    100028: honeycomb tierra var uno
+    100030: honeycomb tierravar dos
+    100032: larva
+    100034: miel acumulada
+    100036: miel acumulada  prop 02
+    100038: miel acumulada prop 01
+    100040: miel acumulada.001
+    100042: miel estalactitas
+    100044: miel estalactitas prop cuatro
+    100046: miel estalactitas prop dos
+    100048: miel estalactitas prop tres
+    100050: miel estalactitas prop uno
+    100052: miel honeycomb
+    100054: miel honeycomb tierra var dos
+    100056: miel honeycomb tierra var uno
+    100058: panal
+    100060: //RootNode
+    100062: piso panal
+    100064: root
+    100066: spine
+    100068: spine top
+    100070: spine top_end
+    100072: spine top_end_end
+    100074: spine2
+    100076: spine3
+    100078: tail
+    100080: tail top
+    100082: tail top_end
+    100084: tail top_end_end
+    100086: tail2
+    100088: tapa honeycomb
+    100090: techo
+    100092: tunel
+    100094: tunel.001
+    100096: tunel.002
+    100098: tunel.003
+    400000: ' mielhoneycomb top tierra var tres'
+    400002: Armature
+    400004: bg auxiliar
+    400006: Circle proceduralp1
+    400008: Circle proceduralp2
+    400010: Circle proceduralp3
+    400012: Circle proceduralp4
+    400014: Circle proceduralp5
+    400016: honeycomb cielo
+    400018: honeycomb cielo prop dos
+    400020: honeycomb cielo prop tres
+    400022: honeycomb cielo prop uno
+    400024: honeycomb tierra
+    400026: honeycomb tierra var tres
+    400028: honeycomb tierra var uno
+    400030: honeycomb tierravar dos
+    400032: larva
+    400034: miel acumulada
+    400036: miel acumulada  prop 02
+    400038: miel acumulada prop 01
+    400040: miel acumulada.001
+    400042: miel estalactitas
+    400044: miel estalactitas prop cuatro
+    400046: miel estalactitas prop dos
+    400048: miel estalactitas prop tres
+    400050: miel estalactitas prop uno
+    400052: miel honeycomb
+    400054: miel honeycomb tierra var dos
+    400056: miel honeycomb tierra var uno
+    400058: panal
+    400060: //RootNode
+    400062: piso panal
+    400064: root
+    400066: spine
+    400068: spine top
+    400070: spine top_end
+    400072: spine top_end_end
+    400074: spine2
+    400076: spine3
+    400078: tail
+    400080: tail top
+    400082: tail top_end
+    400084: tail top_end_end
+    400086: tail2
+    400088: tapa honeycomb
+    400090: techo
+    400092: tunel
+    400094: tunel.001
+    400096: tunel.002
+    400098: tunel.003
+    2100000: larva dif material
+    2100002: grid honeycomb material
+    2100004: piezas 1 difuse color material
+    2100006: pit honey material
+    2100008: ground material
+    2100010: honeycomb texture walpaper material
+    2100012: cieling material
+    2300000: ' mielhoneycomb top tierra var tres'
+    2300002: bg auxiliar
+    2300004: Circle proceduralp1
+    2300006: Circle proceduralp2
+    2300008: Circle proceduralp3
+    2300010: Circle proceduralp4
+    2300012: Circle proceduralp5
+    2300014: honeycomb cielo
+    2300016: honeycomb cielo prop dos
+    2300018: honeycomb cielo prop tres
+    2300020: honeycomb cielo prop uno
+    2300022: honeycomb tierra
+    2300024: honeycomb tierra var tres
+    2300026: honeycomb tierra var uno
+    2300028: honeycomb tierravar dos
+    2300030: miel acumulada
+    2300032: miel acumulada  prop 02
+    2300034: miel acumulada prop 01
+    2300036: miel acumulada.001
+    2300038: miel estalactitas
+    2300040: miel estalactitas prop cuatro
+    2300042: miel estalactitas prop dos
+    2300044: miel estalactitas prop tres
+    2300046: miel estalactitas prop uno
+    2300048: miel honeycomb
+    2300050: miel honeycomb tierra var dos
+    2300052: miel honeycomb tierra var uno
+    2300054: panal
+    2300056: piso panal
+    2300058: tapa honeycomb
+    2300060: techo
+    2300062: tunel
+    2300064: tunel.001
+    2300066: tunel.002
+    2300068: tunel.003
+    3300000: ' mielhoneycomb top tierra var tres'
+    3300002: bg auxiliar
+    3300004: Circle proceduralp1
+    3300006: Circle proceduralp2
+    3300008: Circle proceduralp3
+    3300010: Circle proceduralp4
+    3300012: Circle proceduralp5
+    3300014: honeycomb cielo
+    3300016: honeycomb cielo prop dos
+    3300018: honeycomb cielo prop tres
+    3300020: honeycomb cielo prop uno
+    3300022: honeycomb tierra
+    3300024: honeycomb tierra var tres
+    3300026: honeycomb tierra var uno
+    3300028: honeycomb tierravar dos
+    3300030: miel acumulada
+    3300032: miel acumulada  prop 02
+    3300034: miel acumulada prop 01
+    3300036: miel acumulada.001
+    3300038: miel estalactitas
+    3300040: miel estalactitas prop cuatro
+    3300042: miel estalactitas prop dos
+    3300044: miel estalactitas prop tres
+    3300046: miel estalactitas prop uno
+    3300048: miel honeycomb
+    3300050: miel honeycomb tierra var dos
+    3300052: miel honeycomb tierra var uno
+    3300054: panal
+    3300056: piso panal
+    3300058: tapa honeycomb
+    3300060: techo
+    3300062: tunel
+    3300064: tunel.001
+    3300066: tunel.002
+    3300068: tunel.003
+    4300000: larva
+    4300002: tapa honeycomb
+    4300004: miel estalactitas prop tres
+    4300006: miel estalactitas prop cuatro
+    4300008: miel estalactitas prop dos
+    4300010: honeycomb cielo prop tres
+    4300012: honeycomb cielo prop dos
+    4300014: miel acumulada  prop 02
+    4300016: ' mielhoneycomb top tierra var tres'
+    4300018: honeycomb tierra var tres
+    4300020: miel honeycomb tierra var dos
+    4300022: honeycomb tierravar dos
+    4300024: miel estalactitas prop uno
+    4300026: honeycomb cielo prop uno
+    4300028: miel acumulada prop 01
+    4300030: honeycomb tierra var uno
+    4300032: miel honeycomb tierra var uno
+    4300034: miel acumulada.001
+    4300036: Circle proceduralp3
+    4300038: Circle proceduralp4
+    4300040: Circle proceduralp5
+    4300042: Circle proceduralp2
+    4300044: Circle proceduralp1
+    4300046: piso panal
+    4300048: miel honeycomb
+    4300050: tunel
+    4300052: panal
+    4300054: miel acumulada
+    4300056: techo
+    4300058: bg auxiliar
+    4300060: miel estalactitas
+    4300062: honeycomb cielo
+    4300064: honeycomb tierra
+    4300066: tunel.003
+    4300068: tunel.001
+    4300070: tunel.002
+    9500000: //RootNode
+    13700000: larva
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TUNELdifuse color material
+    second: {fileID: 2100000, guid: 1125b81c9e847904181c57fa7ff6bdea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cieling material
+    second: {fileID: 2100000, guid: 56b5afaf631fc124c8b3234860e854f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grid honeycomb material
+    second: {fileID: 2100000, guid: dcea6faf3c4268a4e995ec85890b19ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground material
+    second: {fileID: 2100000, guid: 2d90414e213484f47a672062e8f88c5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: honeycomb texture walpaper material
+    second: {fileID: 2100000, guid: 107ad7e52a1f4d147a3a119db519681a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: larva dif material
+    second: {fileID: 2100000, guid: d0e0a67e5080de5498afc76c4d68d2b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: piezas 1 difuse color material
+    second: {fileID: 2100000, guid: 003ae3ef5084ddc4398f1f01db3b9e44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pit honey material
+    second: {fileID: 2100000, guid: d00cb25c1ac86004d8e84c19cee823fd, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

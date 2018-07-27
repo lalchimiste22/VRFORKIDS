@@ -1,0 +1,2024 @@
+fileFormatVersion: 2
+guid: 4cb49df87d355224ca523e9bfa0ddc74
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: abeja_peluda_low:ant
+    100002: abeja_peluda_low:ant_Left_1
+    100004: abeja_peluda_low:ant_Left_2
+    100006: abeja_peluda_low:ant_Left_top
+    100008: abeja_peluda_low:ant_Right_1
+    100010: abeja_peluda_low:ant_Right_2
+    100012: abeja_peluda_low:ant_Right_top
+    100014: abeja_peluda_low:bee
+    100016: abeja_peluda_low:bee_hair
+    100018: abeja_peluda_low:clavicle
+    100020: abeja_peluda_low:clavicle_ctrl
+    100022: abeja_peluda_low:ctrl_ant_left
+    100024: abeja_peluda_low:ctrl_ant_right
+    100026: abeja_peluda_low:ctrl_leg_back_left
+    100028: abeja_peluda_low:ctrl_leg_back_right
+    100030: abeja_peluda_low:ctrl_leg_front_left
+    100032: abeja_peluda_low:ctrl_leg_front_right
+    100034: abeja_peluda_low:ctrl_leg_midle_left
+    100036: abeja_peluda_low:ctrl_leg_midle_right
+    100038: abeja_peluda_low:ctrl_wing_left
+    100040: abeja_peluda_low:ctrl_wing_right
+    100042: abeja_peluda_low:eyes
+    100044: abeja_peluda_low:group1
+    100046: abeja_peluda_low:group10
+    100048: abeja_peluda_low:group11
+    100050: abeja_peluda_low:group12
+    100052: abeja_peluda_low:group13
+    100054: abeja_peluda_low:group14
+    100056: abeja_peluda_low:group15
+    100058: abeja_peluda_low:group16
+    100060: abeja_peluda_low:group17
+    100062: abeja_peluda_low:group18
+    100064: abeja_peluda_low:group19
+    100066: abeja_peluda_low:group2
+    100068: abeja_peluda_low:group20
+    100070: abeja_peluda_low:group21
+    100072: abeja_peluda_low:group22
+    100074: abeja_peluda_low:group23
+    100076: abeja_peluda_low:group24
+    100078: abeja_peluda_low:group25
+    100080: abeja_peluda_low:group26
+    100082: abeja_peluda_low:group27
+    100084: abeja_peluda_low:group28
+    100086: abeja_peluda_low:group29
+    100088: abeja_peluda_low:group3
+    100090: abeja_peluda_low:group30
+    100092: abeja_peluda_low:group31
+    100094: abeja_peluda_low:group32
+    100096: abeja_peluda_low:group33
+    100098: abeja_peluda_low:group34
+    100100: abeja_peluda_low:group35
+    100102: abeja_peluda_low:group36
+    100104: abeja_peluda_low:group37
+    100106: abeja_peluda_low:group38
+    100108: abeja_peluda_low:group39
+    100110: abeja_peluda_low:group4
+    100112: abeja_peluda_low:group40
+    100114: abeja_peluda_low:group41
+    100116: abeja_peluda_low:group42
+    100118: abeja_peluda_low:group43
+    100120: abeja_peluda_low:group43 1
+    100122: abeja_peluda_low:group43 2
+    100124: abeja_peluda_low:group44
+    100126: abeja_peluda_low:group44 1
+    100128: abeja_peluda_low:group44 2
+    100130: abeja_peluda_low:group45
+    100132: abeja_peluda_low:group45 1
+    100134: abeja_peluda_low:group45 2
+    100136: abeja_peluda_low:group46
+    100138: abeja_peluda_low:group46 1
+    100140: abeja_peluda_low:group46 2
+    100142: abeja_peluda_low:group47
+    100144: abeja_peluda_low:group47 1
+    100146: abeja_peluda_low:group47 2
+    100148: abeja_peluda_low:group48
+    100150: abeja_peluda_low:group49
+    100152: abeja_peluda_low:group5
+    100154: abeja_peluda_low:group50
+    100156: abeja_peluda_low:group51
+    100158: abeja_peluda_low:group6
+    100160: abeja_peluda_low:group7
+    100162: abeja_peluda_low:group8
+    100164: abeja_peluda_low:group9
+    100166: abeja_peluda_low:group_abdomen
+    100168: abeja_peluda_low:group_bee
+    100170: abeja_peluda_low:hair
+    100172: abeja_peluda_low:hair10
+    100174: abeja_peluda_low:hair11
+    100176: abeja_peluda_low:hair12
+    100178: abeja_peluda_low:hair13
+    100180: abeja_peluda_low:hair24
+    100182: abeja_peluda_low:hair24 1
+    100184: abeja_peluda_low:hair24 10
+    100186: abeja_peluda_low:hair24 11
+    100188: abeja_peluda_low:hair24 12
+    100190: abeja_peluda_low:hair24 13
+    100192: abeja_peluda_low:hair24 14
+    100194: abeja_peluda_low:hair24 15
+    100196: abeja_peluda_low:hair24 16
+    100198: abeja_peluda_low:hair24 17
+    100200: abeja_peluda_low:hair24 18
+    100202: abeja_peluda_low:hair24 19
+    100204: abeja_peluda_low:hair24 2
+    100206: abeja_peluda_low:hair24 20
+    100208: abeja_peluda_low:hair24 21
+    100210: abeja_peluda_low:hair24 22
+    100212: abeja_peluda_low:hair24 23
+    100214: abeja_peluda_low:hair24 24
+    100216: abeja_peluda_low:hair24 25
+    100218: abeja_peluda_low:hair24 26
+    100220: abeja_peluda_low:hair24 27
+    100222: abeja_peluda_low:hair24 28
+    100224: abeja_peluda_low:hair24 29
+    100226: abeja_peluda_low:hair24 3
+    100228: abeja_peluda_low:hair24 30
+    100230: abeja_peluda_low:hair24 31
+    100232: abeja_peluda_low:hair24 32
+    100234: abeja_peluda_low:hair24 33
+    100236: abeja_peluda_low:hair24 34
+    100238: abeja_peluda_low:hair24 35
+    100240: abeja_peluda_low:hair24 36
+    100242: abeja_peluda_low:hair24 37
+    100244: abeja_peluda_low:hair24 38
+    100246: abeja_peluda_low:hair24 39
+    100248: abeja_peluda_low:hair24 4
+    100250: abeja_peluda_low:hair24 40
+    100252: abeja_peluda_low:hair24 41
+    100254: abeja_peluda_low:hair24 42
+    100256: abeja_peluda_low:hair24 43
+    100258: abeja_peluda_low:hair24 44
+    100260: abeja_peluda_low:hair24 45
+    100262: abeja_peluda_low:hair24 46
+    100264: abeja_peluda_low:hair24 47
+    100266: abeja_peluda_low:hair24 48
+    100268: abeja_peluda_low:hair24 49
+    100270: abeja_peluda_low:hair24 5
+    100272: abeja_peluda_low:hair24 50
+    100274: abeja_peluda_low:hair24 51
+    100276: abeja_peluda_low:hair24 52
+    100278: abeja_peluda_low:hair24 53
+    100280: abeja_peluda_low:hair24 54
+    100282: abeja_peluda_low:hair24 55
+    100284: abeja_peluda_low:hair24 56
+    100286: abeja_peluda_low:hair24 6
+    100288: abeja_peluda_low:hair24 7
+    100290: abeja_peluda_low:hair24 8
+    100292: abeja_peluda_low:hair24 9
+    100294: abeja_peluda_low:hair25
+    100296: abeja_peluda_low:hair25 1
+    100298: abeja_peluda_low:hair25 10
+    100300: abeja_peluda_low:hair25 11
+    100302: abeja_peluda_low:hair25 12
+    100304: abeja_peluda_low:hair25 13
+    100306: abeja_peluda_low:hair25 14
+    100308: abeja_peluda_low:hair25 15
+    100310: abeja_peluda_low:hair25 16
+    100312: abeja_peluda_low:hair25 17
+    100314: abeja_peluda_low:hair25 18
+    100316: abeja_peluda_low:hair25 19
+    100318: abeja_peluda_low:hair25 2
+    100320: abeja_peluda_low:hair25 20
+    100322: abeja_peluda_low:hair25 21
+    100324: abeja_peluda_low:hair25 22
+    100326: abeja_peluda_low:hair25 23
+    100328: abeja_peluda_low:hair25 24
+    100330: abeja_peluda_low:hair25 25
+    100332: abeja_peluda_low:hair25 26
+    100334: abeja_peluda_low:hair25 27
+    100336: abeja_peluda_low:hair25 28
+    100338: abeja_peluda_low:hair25 29
+    100340: abeja_peluda_low:hair25 3
+    100342: abeja_peluda_low:hair25 30
+    100344: abeja_peluda_low:hair25 31
+    100346: abeja_peluda_low:hair25 32
+    100348: abeja_peluda_low:hair25 33
+    100350: abeja_peluda_low:hair25 34
+    100352: abeja_peluda_low:hair25 35
+    100354: abeja_peluda_low:hair25 36
+    100356: abeja_peluda_low:hair25 37
+    100358: abeja_peluda_low:hair25 38
+    100360: abeja_peluda_low:hair25 39
+    100362: abeja_peluda_low:hair25 4
+    100364: abeja_peluda_low:hair25 40
+    100366: abeja_peluda_low:hair25 41
+    100368: abeja_peluda_low:hair25 42
+    100370: abeja_peluda_low:hair25 43
+    100372: abeja_peluda_low:hair25 44
+    100374: abeja_peluda_low:hair25 45
+    100376: abeja_peluda_low:hair25 46
+    100378: abeja_peluda_low:hair25 47
+    100380: abeja_peluda_low:hair25 48
+    100382: abeja_peluda_low:hair25 49
+    100384: abeja_peluda_low:hair25 5
+    100386: abeja_peluda_low:hair25 50
+    100388: abeja_peluda_low:hair25 51
+    100390: abeja_peluda_low:hair25 52
+    100392: abeja_peluda_low:hair25 53
+    100394: abeja_peluda_low:hair25 54
+    100396: abeja_peluda_low:hair25 55
+    100398: abeja_peluda_low:hair25 56
+    100400: abeja_peluda_low:hair25 6
+    100402: abeja_peluda_low:hair25 7
+    100404: abeja_peluda_low:hair25 8
+    100406: abeja_peluda_low:hair25 9
+    100408: abeja_peluda_low:hair26
+    100410: abeja_peluda_low:hair26 1
+    100412: abeja_peluda_low:hair26 10
+    100414: abeja_peluda_low:hair26 11
+    100416: abeja_peluda_low:hair26 12
+    100418: abeja_peluda_low:hair26 13
+    100420: abeja_peluda_low:hair26 14
+    100422: abeja_peluda_low:hair26 15
+    100424: abeja_peluda_low:hair26 16
+    100426: abeja_peluda_low:hair26 17
+    100428: abeja_peluda_low:hair26 18
+    100430: abeja_peluda_low:hair26 19
+    100432: abeja_peluda_low:hair26 2
+    100434: abeja_peluda_low:hair26 20
+    100436: abeja_peluda_low:hair26 21
+    100438: abeja_peluda_low:hair26 22
+    100440: abeja_peluda_low:hair26 23
+    100442: abeja_peluda_low:hair26 24
+    100444: abeja_peluda_low:hair26 25
+    100446: abeja_peluda_low:hair26 26
+    100448: abeja_peluda_low:hair26 27
+    100450: abeja_peluda_low:hair26 28
+    100452: abeja_peluda_low:hair26 29
+    100454: abeja_peluda_low:hair26 3
+    100456: abeja_peluda_low:hair26 30
+    100458: abeja_peluda_low:hair26 31
+    100460: abeja_peluda_low:hair26 32
+    100462: abeja_peluda_low:hair26 33
+    100464: abeja_peluda_low:hair26 34
+    100466: abeja_peluda_low:hair26 35
+    100468: abeja_peluda_low:hair26 36
+    100470: abeja_peluda_low:hair26 37
+    100472: abeja_peluda_low:hair26 38
+    100474: abeja_peluda_low:hair26 39
+    100476: abeja_peluda_low:hair26 4
+    100478: abeja_peluda_low:hair26 40
+    100480: abeja_peluda_low:hair26 41
+    100482: abeja_peluda_low:hair26 42
+    100484: abeja_peluda_low:hair26 43
+    100486: abeja_peluda_low:hair26 44
+    100488: abeja_peluda_low:hair26 45
+    100490: abeja_peluda_low:hair26 46
+    100492: abeja_peluda_low:hair26 47
+    100494: abeja_peluda_low:hair26 48
+    100496: abeja_peluda_low:hair26 49
+    100498: abeja_peluda_low:hair26 5
+    100500: abeja_peluda_low:hair26 50
+    100502: abeja_peluda_low:hair26 51
+    100504: abeja_peluda_low:hair26 52
+    100506: abeja_peluda_low:hair26 53
+    100508: abeja_peluda_low:hair26 54
+    100510: abeja_peluda_low:hair26 55
+    100512: abeja_peluda_low:hair26 56
+    100514: abeja_peluda_low:hair26 6
+    100516: abeja_peluda_low:hair26 7
+    100518: abeja_peluda_low:hair26 8
+    100520: abeja_peluda_low:hair26 9
+    100522: abeja_peluda_low:hair27
+    100524: abeja_peluda_low:hair27 1
+    100526: abeja_peluda_low:hair27 10
+    100528: abeja_peluda_low:hair27 11
+    100530: abeja_peluda_low:hair27 12
+    100532: abeja_peluda_low:hair27 13
+    100534: abeja_peluda_low:hair27 14
+    100536: abeja_peluda_low:hair27 15
+    100538: abeja_peluda_low:hair27 16
+    100540: abeja_peluda_low:hair27 17
+    100542: abeja_peluda_low:hair27 18
+    100544: abeja_peluda_low:hair27 19
+    100546: abeja_peluda_low:hair27 2
+    100548: abeja_peluda_low:hair27 20
+    100550: abeja_peluda_low:hair27 21
+    100552: abeja_peluda_low:hair27 22
+    100554: abeja_peluda_low:hair27 23
+    100556: abeja_peluda_low:hair27 24
+    100558: abeja_peluda_low:hair27 25
+    100560: abeja_peluda_low:hair27 26
+    100562: abeja_peluda_low:hair27 27
+    100564: abeja_peluda_low:hair27 28
+    100566: abeja_peluda_low:hair27 29
+    100568: abeja_peluda_low:hair27 3
+    100570: abeja_peluda_low:hair27 30
+    100572: abeja_peluda_low:hair27 31
+    100574: abeja_peluda_low:hair27 32
+    100576: abeja_peluda_low:hair27 33
+    100578: abeja_peluda_low:hair27 34
+    100580: abeja_peluda_low:hair27 35
+    100582: abeja_peluda_low:hair27 36
+    100584: abeja_peluda_low:hair27 37
+    100586: abeja_peluda_low:hair27 38
+    100588: abeja_peluda_low:hair27 39
+    100590: abeja_peluda_low:hair27 4
+    100592: abeja_peluda_low:hair27 40
+    100594: abeja_peluda_low:hair27 41
+    100596: abeja_peluda_low:hair27 42
+    100598: abeja_peluda_low:hair27 43
+    100600: abeja_peluda_low:hair27 44
+    100602: abeja_peluda_low:hair27 45
+    100604: abeja_peluda_low:hair27 46
+    100606: abeja_peluda_low:hair27 47
+    100608: abeja_peluda_low:hair27 48
+    100610: abeja_peluda_low:hair27 49
+    100612: abeja_peluda_low:hair27 5
+    100614: abeja_peluda_low:hair27 50
+    100616: abeja_peluda_low:hair27 51
+    100618: abeja_peluda_low:hair27 52
+    100620: abeja_peluda_low:hair27 53
+    100622: abeja_peluda_low:hair27 54
+    100624: abeja_peluda_low:hair27 55
+    100626: abeja_peluda_low:hair27 56
+    100628: abeja_peluda_low:hair27 6
+    100630: abeja_peluda_low:hair27 7
+    100632: abeja_peluda_low:hair27 8
+    100634: abeja_peluda_low:hair27 9
+    100636: abeja_peluda_low:hair28
+    100638: abeja_peluda_low:hair28 1
+    100640: abeja_peluda_low:hair28 10
+    100642: abeja_peluda_low:hair28 11
+    100644: abeja_peluda_low:hair28 12
+    100646: abeja_peluda_low:hair28 13
+    100648: abeja_peluda_low:hair28 14
+    100650: abeja_peluda_low:hair28 15
+    100652: abeja_peluda_low:hair28 16
+    100654: abeja_peluda_low:hair28 17
+    100656: abeja_peluda_low:hair28 18
+    100658: abeja_peluda_low:hair28 19
+    100660: abeja_peluda_low:hair28 2
+    100662: abeja_peluda_low:hair28 20
+    100664: abeja_peluda_low:hair28 21
+    100666: abeja_peluda_low:hair28 22
+    100668: abeja_peluda_low:hair28 23
+    100670: abeja_peluda_low:hair28 24
+    100672: abeja_peluda_low:hair28 25
+    100674: abeja_peluda_low:hair28 26
+    100676: abeja_peluda_low:hair28 27
+    100678: abeja_peluda_low:hair28 28
+    100680: abeja_peluda_low:hair28 29
+    100682: abeja_peluda_low:hair28 3
+    100684: abeja_peluda_low:hair28 30
+    100686: abeja_peluda_low:hair28 31
+    100688: abeja_peluda_low:hair28 32
+    100690: abeja_peluda_low:hair28 33
+    100692: abeja_peluda_low:hair28 34
+    100694: abeja_peluda_low:hair28 35
+    100696: abeja_peluda_low:hair28 36
+    100698: abeja_peluda_low:hair28 37
+    100700: abeja_peluda_low:hair28 38
+    100702: abeja_peluda_low:hair28 39
+    100704: abeja_peluda_low:hair28 4
+    100706: abeja_peluda_low:hair28 40
+    100708: abeja_peluda_low:hair28 41
+    100710: abeja_peluda_low:hair28 42
+    100712: abeja_peluda_low:hair28 43
+    100714: abeja_peluda_low:hair28 44
+    100716: abeja_peluda_low:hair28 45
+    100718: abeja_peluda_low:hair28 46
+    100720: abeja_peluda_low:hair28 47
+    100722: abeja_peluda_low:hair28 48
+    100724: abeja_peluda_low:hair28 49
+    100726: abeja_peluda_low:hair28 5
+    100728: abeja_peluda_low:hair28 50
+    100730: abeja_peluda_low:hair28 51
+    100732: abeja_peluda_low:hair28 52
+    100734: abeja_peluda_low:hair28 53
+    100736: abeja_peluda_low:hair28 54
+    100738: abeja_peluda_low:hair28 55
+    100740: abeja_peluda_low:hair28 56
+    100742: abeja_peluda_low:hair28 6
+    100744: abeja_peluda_low:hair28 7
+    100746: abeja_peluda_low:hair28 8
+    100748: abeja_peluda_low:hair28 9
+    100750: abeja_peluda_low:head
+    100752: abeja_peluda_low:head 1
+    100754: abeja_peluda_low:hips
+    100756: abeja_peluda_low:hips_ctlr
+    100758: abeja_peluda_low:ikHandle1
+    100760: abeja_peluda_low:ikHandle10
+    100762: abeja_peluda_low:ikHandle11
+    100764: abeja_peluda_low:ikHandle3
+    100766: abeja_peluda_low:ikHandle4
+    100768: abeja_peluda_low:ikHandle6
+    100770: abeja_peluda_low:ikHandle7
+    100772: abeja_peluda_low:ikHandle8
+    100774: abeja_peluda_low:ikHandle9
+    100776: abeja_peluda_low:jaw
+    100778: abeja_peluda_low:jaw_ctrl
+    100780: abeja_peluda_low:jawtop
+    100782: abeja_peluda_low:Jawtop_ctrl
+    100784: abeja_peluda_low:joint
+    100786: abeja_peluda_low:leg03R
+    100788: abeja_peluda_low:Leg_back_Left
+    100790: abeja_peluda_low:Leg_back_Left_med
+    100792: abeja_peluda_low:Leg_back_Left_top
+    100794: abeja_peluda_low:Leg_back_Right
+    100796: abeja_peluda_low:Leg_back_Right_med
+    100798: abeja_peluda_low:Leg_back_Right_top
+    100800: abeja_peluda_low:Leg_front_Left
+    100802: abeja_peluda_low:Leg_Front_Left_Midle
+    100804: abeja_peluda_low:Leg_front_Left_Midle
+    100806: abeja_peluda_low:Leg_front_Right
+    100808: abeja_peluda_low:Leg_Front_Right_Midle
+    100810: abeja_peluda_low:Leg_front_Right_Midle
+    100812: abeja_peluda_low:Leg_med_Left
+    100814: abeja_peluda_low:Leg_med_Left_med1
+    100816: abeja_peluda_low:Leg_med_Left_top
+    100818: abeja_peluda_low:Leg_med_Right
+    100820: abeja_peluda_low:Leg_med_Right_med1
+    100822: abeja_peluda_low:Leg_med_Right_top
+    100824: abeja_peluda_low:Main
+    100826: abeja_peluda_low:neck
+    100828: abeja_peluda_low:neck_ctrl
+    100830: abeja_peluda_low:pelo
+    100832: abeja_peluda_low:pole_back_left
+    100834: abeja_peluda_low:pole_back_right
+    100836: abeja_peluda_low:pole_front_left
+    100838: abeja_peluda_low:pole_front_right
+    100840: abeja_peluda_low:pole_med_left
+    100842: abeja_peluda_low:pole_med_right
+    100844: abeja_peluda_low:pole_tail_right
+    100846: abeja_peluda_low:polySurface1
+    100848: abeja_peluda_low:Root
+    100850: abeja_peluda_low:spine
+    100852: abeja_peluda_low:spinecrl
+    100854: abeja_peluda_low:tail1
+    100856: abeja_peluda_low:tail2
+    100858: abeja_peluda_low:Tail_ctrl
+    100860: abeja_peluda_low:tail_top
+    100862: abeja_peluda_low:torax
+    100864: abeja_peluda_low:wing01R
+    100866: abeja_peluda_low:wing_Left
+    100868: abeja_peluda_low:Wing_Left_top
+    100870: abeja_peluda_low:wing_Right
+    100872: abeja_peluda_low:Wing_Right_top
+    100874: //RootNode
+    100876: ant
+    100878: ant_Left_1
+    100880: ant_Left_2
+    100882: ant_Left_top
+    100884: ant_Right_1
+    100886: ant_Right_2
+    100888: ant_Right_top
+    100890: bee
+    100892: bee_hair
+    100894: clavicle
+    100896: clavicle_ctrl
+    100898: ctrl_ant_left
+    100900: ctrl_ant_right
+    100902: ctrl_leg_back_left
+    100904: ctrl_leg_back_right
+    100906: ctrl_leg_front_left
+    100908: ctrl_leg_front_right
+    100910: ctrl_leg_midle_left
+    100912: ctrl_leg_midle_right
+    100914: ctrl_wing_left
+    100916: ctrl_wing_right
+    100918: eyes
+    100920: group1
+    100922: group10
+    100924: group11
+    100926: group12
+    100928: group13
+    100930: group14
+    100932: group15
+    100934: group16
+    100936: group17
+    100938: group18
+    100940: group19
+    100942: group2
+    100944: group20
+    100946: group21
+    100948: group22
+    100950: group23
+    100952: group24
+    100954: group25
+    100956: group26
+    100958: group27
+    100960: group28
+    100962: group29
+    100964: group3
+    100966: group30
+    100968: group31
+    100970: group32
+    100972: group33
+    100974: group34
+    100976: group35
+    100978: group36
+    100980: group37
+    100982: group38
+    100984: group39
+    100986: group4
+    100988: group40
+    100990: group41
+    100992: group42
+    100994: group43
+    100996: group43 1
+    100998: group43 2
+    101000: group44
+    101002: group44 1
+    101004: group44 2
+    101006: group45
+    101008: group45 1
+    101010: group45 2
+    101012: group46
+    101014: group46 1
+    101016: group46 2
+    101018: group47
+    101020: group47 1
+    101022: group47 2
+    101024: group48
+    101026: group49
+    101028: group5
+    101030: group50
+    101032: group51
+    101034: group6
+    101036: group7
+    101038: group8
+    101040: group9
+    101042: group_abdomen
+    101044: group_bee
+    101046: hair
+    101048: hair10
+    101050: hair11
+    101052: hair12
+    101054: hair13
+    101056: hair24
+    101058: hair24 1
+    101060: hair24 10
+    101062: hair24 11
+    101064: hair24 12
+    101066: hair24 13
+    101068: hair24 14
+    101070: hair24 15
+    101072: hair24 16
+    101074: hair24 17
+    101076: hair24 18
+    101078: hair24 19
+    101080: hair24 2
+    101082: hair24 20
+    101084: hair24 21
+    101086: hair24 22
+    101088: hair24 23
+    101090: hair24 24
+    101092: hair24 25
+    101094: hair24 26
+    101096: hair24 27
+    101098: hair24 28
+    101100: hair24 29
+    101102: hair24 3
+    101104: hair24 30
+    101106: hair24 31
+    101108: hair24 32
+    101110: hair24 33
+    101112: hair24 34
+    101114: hair24 35
+    101116: hair24 36
+    101118: hair24 37
+    101120: hair24 38
+    101122: hair24 39
+    101124: hair24 4
+    101126: hair24 40
+    101128: hair24 41
+    101130: hair24 42
+    101132: hair24 43
+    101134: hair24 44
+    101136: hair24 45
+    101138: hair24 46
+    101140: hair24 47
+    101142: hair24 48
+    101144: hair24 49
+    101146: hair24 5
+    101148: hair24 50
+    101150: hair24 51
+    101152: hair24 52
+    101154: hair24 53
+    101156: hair24 54
+    101158: hair24 55
+    101160: hair24 56
+    101162: hair24 6
+    101164: hair24 7
+    101166: hair24 8
+    101168: hair24 9
+    101170: hair25
+    101172: hair25 1
+    101174: hair25 10
+    101176: hair25 11
+    101178: hair25 12
+    101180: hair25 13
+    101182: hair25 14
+    101184: hair25 15
+    101186: hair25 16
+    101188: hair25 17
+    101190: hair25 18
+    101192: hair25 19
+    101194: hair25 2
+    101196: hair25 20
+    101198: hair25 21
+    101200: hair25 22
+    101202: hair25 23
+    101204: hair25 24
+    101206: hair25 25
+    101208: hair25 26
+    101210: hair25 27
+    101212: hair25 28
+    101214: hair25 29
+    101216: hair25 3
+    101218: hair25 30
+    101220: hair25 31
+    101222: hair25 32
+    101224: hair25 33
+    101226: hair25 34
+    101228: hair25 35
+    101230: hair25 36
+    101232: hair25 37
+    101234: hair25 38
+    101236: hair25 39
+    101238: hair25 4
+    101240: hair25 40
+    101242: hair25 41
+    101244: hair25 42
+    101246: hair25 43
+    101248: hair25 44
+    101250: hair25 45
+    101252: hair25 46
+    101254: hair25 47
+    101256: hair25 48
+    101258: hair25 49
+    101260: hair25 5
+    101262: hair25 50
+    101264: hair25 51
+    101266: hair25 52
+    101268: hair25 53
+    101270: hair25 54
+    101272: hair25 55
+    101274: hair25 56
+    101276: hair25 6
+    101278: hair25 7
+    101280: hair25 8
+    101282: hair25 9
+    101284: hair26
+    101286: hair26 1
+    101288: hair26 10
+    101290: hair26 11
+    101292: hair26 12
+    101294: hair26 13
+    101296: hair26 14
+    101298: hair26 15
+    101300: hair26 16
+    101302: hair26 17
+    101304: hair26 18
+    101306: hair26 19
+    101308: hair26 2
+    101310: hair26 20
+    101312: hair26 21
+    101314: hair26 22
+    101316: hair26 23
+    101318: hair26 24
+    101320: hair26 25
+    101322: hair26 26
+    101324: hair26 27
+    101326: hair26 28
+    101328: hair26 29
+    101330: hair26 3
+    101332: hair26 30
+    101334: hair26 31
+    101336: hair26 32
+    101338: hair26 33
+    101340: hair26 34
+    101342: hair26 35
+    101344: hair26 36
+    101346: hair26 37
+    101348: hair26 38
+    101350: hair26 39
+    101352: hair26 4
+    101354: hair26 40
+    101356: hair26 41
+    101358: hair26 42
+    101360: hair26 43
+    101362: hair26 44
+    101364: hair26 45
+    101366: hair26 46
+    101368: hair26 47
+    101370: hair26 48
+    101372: hair26 49
+    101374: hair26 5
+    101376: hair26 50
+    101378: hair26 51
+    101380: hair26 52
+    101382: hair26 53
+    101384: hair26 54
+    101386: hair26 55
+    101388: hair26 56
+    101390: hair26 6
+    101392: hair26 7
+    101394: hair26 8
+    101396: hair26 9
+    101398: hair27
+    101400: hair27 1
+    101402: hair27 10
+    101404: hair27 11
+    101406: hair27 12
+    101408: hair27 13
+    101410: hair27 14
+    101412: hair27 15
+    101414: hair27 16
+    101416: hair27 17
+    101418: hair27 18
+    101420: hair27 19
+    101422: hair27 2
+    101424: hair27 20
+    101426: hair27 21
+    101428: hair27 22
+    101430: hair27 23
+    101432: hair27 24
+    101434: hair27 25
+    101436: hair27 26
+    101438: hair27 27
+    101440: hair27 28
+    101442: hair27 29
+    101444: hair27 3
+    101446: hair27 30
+    101448: hair27 31
+    101450: hair27 32
+    101452: hair27 33
+    101454: hair27 34
+    101456: hair27 35
+    101458: hair27 36
+    101460: hair27 37
+    101462: hair27 38
+    101464: hair27 39
+    101466: hair27 4
+    101468: hair27 40
+    101470: hair27 41
+    101472: hair27 42
+    101474: hair27 43
+    101476: hair27 44
+    101478: hair27 45
+    101480: hair27 46
+    101482: hair27 47
+    101484: hair27 48
+    101486: hair27 49
+    101488: hair27 5
+    101490: hair27 50
+    101492: hair27 51
+    101494: hair27 52
+    101496: hair27 53
+    101498: hair27 54
+    101500: hair27 55
+    101502: hair27 56
+    101504: hair27 6
+    101506: hair27 7
+    101508: hair27 8
+    101510: hair27 9
+    101512: hair28
+    101514: hair28 1
+    101516: hair28 10
+    101518: hair28 11
+    101520: hair28 12
+    101522: hair28 13
+    101524: hair28 14
+    101526: hair28 15
+    101528: hair28 16
+    101530: hair28 17
+    101532: hair28 18
+    101534: hair28 19
+    101536: hair28 2
+    101538: hair28 20
+    101540: hair28 21
+    101542: hair28 22
+    101544: hair28 23
+    101546: hair28 24
+    101548: hair28 25
+    101550: hair28 26
+    101552: hair28 27
+    101554: hair28 28
+    101556: hair28 29
+    101558: hair28 3
+    101560: hair28 30
+    101562: hair28 31
+    101564: hair28 32
+    101566: hair28 33
+    101568: hair28 34
+    101570: hair28 35
+    101572: hair28 36
+    101574: hair28 37
+    101576: hair28 38
+    101578: hair28 39
+    101580: hair28 4
+    101582: hair28 40
+    101584: hair28 41
+    101586: hair28 42
+    101588: hair28 43
+    101590: hair28 44
+    101592: hair28 45
+    101594: hair28 46
+    101596: hair28 47
+    101598: hair28 48
+    101600: hair28 49
+    101602: hair28 5
+    101604: hair28 50
+    101606: hair28 51
+    101608: hair28 52
+    101610: hair28 53
+    101612: hair28 54
+    101614: hair28 55
+    101616: hair28 56
+    101618: hair28 6
+    101620: hair28 7
+    101622: hair28 8
+    101624: hair28 9
+    101626: head
+    101628: head 1
+    101630: hips
+    101632: hips_ctlr
+    101634: ikHandle1
+    101636: ikHandle10
+    101638: ikHandle11
+    101640: ikHandle3
+    101642: ikHandle4
+    101644: ikHandle6
+    101646: ikHandle7
+    101648: ikHandle8
+    101650: ikHandle9
+    101652: jaw
+    101654: jaw_ctrl
+    101656: jawtop
+    101658: Jawtop_ctrl
+    101660: joint
+    101662: leg03R
+    101664: Leg_back_Left
+    101666: Leg_back_Left_med
+    101668: Leg_back_Left_top
+    101670: Leg_back_Right
+    101672: Leg_back_Right_med
+    101674: Leg_back_Right_top
+    101676: Leg_front_Left
+    101678: Leg_Front_Left_Midle
+    101680: Leg_front_Left_Midle
+    101682: Leg_front_Right
+    101684: Leg_Front_Right_Midle
+    101686: Leg_front_Right_Midle
+    101688: Leg_med_Left
+    101690: Leg_med_Left_med1
+    101692: Leg_med_Left_top
+    101694: Leg_med_Right
+    101696: Leg_med_Right_med1
+    101698: Leg_med_Right_top
+    101700: Main
+    101702: neck
+    101704: neck_ctrl
+    101706: pelo
+    101708: pole_back_left
+    101710: pole_back_right
+    101712: pole_front_left
+    101714: pole_front_right
+    101716: pole_med_left
+    101718: pole_med_right
+    101720: pole_tail_right
+    101722: polySurface1
+    101724: Root
+    101726: spine
+    101728: spinecrl
+    101730: tail1
+    101732: tail2
+    101734: Tail_ctrl
+    101736: tail_top
+    101738: torax
+    101740: wing01R
+    101742: wing_Left
+    101744: Wing_Left_top
+    101746: wing_Right
+    101748: Wing_Right_top
+    400000: abeja_peluda_low:ant
+    400002: abeja_peluda_low:ant_Left_1
+    400004: abeja_peluda_low:ant_Left_2
+    400006: abeja_peluda_low:ant_Left_top
+    400008: abeja_peluda_low:ant_Right_1
+    400010: abeja_peluda_low:ant_Right_2
+    400012: abeja_peluda_low:ant_Right_top
+    400014: abeja_peluda_low:bee
+    400016: abeja_peluda_low:bee_hair
+    400018: abeja_peluda_low:clavicle
+    400020: abeja_peluda_low:clavicle_ctrl
+    400022: abeja_peluda_low:ctrl_ant_left
+    400024: abeja_peluda_low:ctrl_ant_right
+    400026: abeja_peluda_low:ctrl_leg_back_left
+    400028: abeja_peluda_low:ctrl_leg_back_right
+    400030: abeja_peluda_low:ctrl_leg_front_left
+    400032: abeja_peluda_low:ctrl_leg_front_right
+    400034: abeja_peluda_low:ctrl_leg_midle_left
+    400036: abeja_peluda_low:ctrl_leg_midle_right
+    400038: abeja_peluda_low:ctrl_wing_left
+    400040: abeja_peluda_low:ctrl_wing_right
+    400042: abeja_peluda_low:eyes
+    400044: abeja_peluda_low:group1
+    400046: abeja_peluda_low:group10
+    400048: abeja_peluda_low:group11
+    400050: abeja_peluda_low:group12
+    400052: abeja_peluda_low:group13
+    400054: abeja_peluda_low:group14
+    400056: abeja_peluda_low:group15
+    400058: abeja_peluda_low:group16
+    400060: abeja_peluda_low:group17
+    400062: abeja_peluda_low:group18
+    400064: abeja_peluda_low:group19
+    400066: abeja_peluda_low:group2
+    400068: abeja_peluda_low:group20
+    400070: abeja_peluda_low:group21
+    400072: abeja_peluda_low:group22
+    400074: abeja_peluda_low:group23
+    400076: abeja_peluda_low:group24
+    400078: abeja_peluda_low:group25
+    400080: abeja_peluda_low:group26
+    400082: abeja_peluda_low:group27
+    400084: abeja_peluda_low:group28
+    400086: abeja_peluda_low:group29
+    400088: abeja_peluda_low:group3
+    400090: abeja_peluda_low:group30
+    400092: abeja_peluda_low:group31
+    400094: abeja_peluda_low:group32
+    400096: abeja_peluda_low:group33
+    400098: abeja_peluda_low:group34
+    400100: abeja_peluda_low:group35
+    400102: abeja_peluda_low:group36
+    400104: abeja_peluda_low:group37
+    400106: abeja_peluda_low:group38
+    400108: abeja_peluda_low:group39
+    400110: abeja_peluda_low:group4
+    400112: abeja_peluda_low:group40
+    400114: abeja_peluda_low:group41
+    400116: abeja_peluda_low:group42
+    400118: abeja_peluda_low:group43
+    400120: abeja_peluda_low:group43 1
+    400122: abeja_peluda_low:group43 2
+    400124: abeja_peluda_low:group44
+    400126: abeja_peluda_low:group44 1
+    400128: abeja_peluda_low:group44 2
+    400130: abeja_peluda_low:group45
+    400132: abeja_peluda_low:group45 1
+    400134: abeja_peluda_low:group45 2
+    400136: abeja_peluda_low:group46
+    400138: abeja_peluda_low:group46 1
+    400140: abeja_peluda_low:group46 2
+    400142: abeja_peluda_low:group47
+    400144: abeja_peluda_low:group47 1
+    400146: abeja_peluda_low:group47 2
+    400148: abeja_peluda_low:group48
+    400150: abeja_peluda_low:group49
+    400152: abeja_peluda_low:group5
+    400154: abeja_peluda_low:group50
+    400156: abeja_peluda_low:group51
+    400158: abeja_peluda_low:group6
+    400160: abeja_peluda_low:group7
+    400162: abeja_peluda_low:group8
+    400164: abeja_peluda_low:group9
+    400166: abeja_peluda_low:group_abdomen
+    400168: abeja_peluda_low:group_bee
+    400170: abeja_peluda_low:hair
+    400172: abeja_peluda_low:hair10
+    400174: abeja_peluda_low:hair11
+    400176: abeja_peluda_low:hair12
+    400178: abeja_peluda_low:hair13
+    400180: abeja_peluda_low:hair24
+    400182: abeja_peluda_low:hair24 1
+    400184: abeja_peluda_low:hair24 10
+    400186: abeja_peluda_low:hair24 11
+    400188: abeja_peluda_low:hair24 12
+    400190: abeja_peluda_low:hair24 13
+    400192: abeja_peluda_low:hair24 14
+    400194: abeja_peluda_low:hair24 15
+    400196: abeja_peluda_low:hair24 16
+    400198: abeja_peluda_low:hair24 17
+    400200: abeja_peluda_low:hair24 18
+    400202: abeja_peluda_low:hair24 19
+    400204: abeja_peluda_low:hair24 2
+    400206: abeja_peluda_low:hair24 20
+    400208: abeja_peluda_low:hair24 21
+    400210: abeja_peluda_low:hair24 22
+    400212: abeja_peluda_low:hair24 23
+    400214: abeja_peluda_low:hair24 24
+    400216: abeja_peluda_low:hair24 25
+    400218: abeja_peluda_low:hair24 26
+    400220: abeja_peluda_low:hair24 27
+    400222: abeja_peluda_low:hair24 28
+    400224: abeja_peluda_low:hair24 29
+    400226: abeja_peluda_low:hair24 3
+    400228: abeja_peluda_low:hair24 30
+    400230: abeja_peluda_low:hair24 31
+    400232: abeja_peluda_low:hair24 32
+    400234: abeja_peluda_low:hair24 33
+    400236: abeja_peluda_low:hair24 34
+    400238: abeja_peluda_low:hair24 35
+    400240: abeja_peluda_low:hair24 36
+    400242: abeja_peluda_low:hair24 37
+    400244: abeja_peluda_low:hair24 38
+    400246: abeja_peluda_low:hair24 39
+    400248: abeja_peluda_low:hair24 4
+    400250: abeja_peluda_low:hair24 40
+    400252: abeja_peluda_low:hair24 41
+    400254: abeja_peluda_low:hair24 42
+    400256: abeja_peluda_low:hair24 43
+    400258: abeja_peluda_low:hair24 44
+    400260: abeja_peluda_low:hair24 45
+    400262: abeja_peluda_low:hair24 46
+    400264: abeja_peluda_low:hair24 47
+    400266: abeja_peluda_low:hair24 48
+    400268: abeja_peluda_low:hair24 49
+    400270: abeja_peluda_low:hair24 5
+    400272: abeja_peluda_low:hair24 50
+    400274: abeja_peluda_low:hair24 51
+    400276: abeja_peluda_low:hair24 52
+    400278: abeja_peluda_low:hair24 53
+    400280: abeja_peluda_low:hair24 54
+    400282: abeja_peluda_low:hair24 55
+    400284: abeja_peluda_low:hair24 56
+    400286: abeja_peluda_low:hair24 6
+    400288: abeja_peluda_low:hair24 7
+    400290: abeja_peluda_low:hair24 8
+    400292: abeja_peluda_low:hair24 9
+    400294: abeja_peluda_low:hair25
+    400296: abeja_peluda_low:hair25 1
+    400298: abeja_peluda_low:hair25 10
+    400300: abeja_peluda_low:hair25 11
+    400302: abeja_peluda_low:hair25 12
+    400304: abeja_peluda_low:hair25 13
+    400306: abeja_peluda_low:hair25 14
+    400308: abeja_peluda_low:hair25 15
+    400310: abeja_peluda_low:hair25 16
+    400312: abeja_peluda_low:hair25 17
+    400314: abeja_peluda_low:hair25 18
+    400316: abeja_peluda_low:hair25 19
+    400318: abeja_peluda_low:hair25 2
+    400320: abeja_peluda_low:hair25 20
+    400322: abeja_peluda_low:hair25 21
+    400324: abeja_peluda_low:hair25 22
+    400326: abeja_peluda_low:hair25 23
+    400328: abeja_peluda_low:hair25 24
+    400330: abeja_peluda_low:hair25 25
+    400332: abeja_peluda_low:hair25 26
+    400334: abeja_peluda_low:hair25 27
+    400336: abeja_peluda_low:hair25 28
+    400338: abeja_peluda_low:hair25 29
+    400340: abeja_peluda_low:hair25 3
+    400342: abeja_peluda_low:hair25 30
+    400344: abeja_peluda_low:hair25 31
+    400346: abeja_peluda_low:hair25 32
+    400348: abeja_peluda_low:hair25 33
+    400350: abeja_peluda_low:hair25 34
+    400352: abeja_peluda_low:hair25 35
+    400354: abeja_peluda_low:hair25 36
+    400356: abeja_peluda_low:hair25 37
+    400358: abeja_peluda_low:hair25 38
+    400360: abeja_peluda_low:hair25 39
+    400362: abeja_peluda_low:hair25 4
+    400364: abeja_peluda_low:hair25 40
+    400366: abeja_peluda_low:hair25 41
+    400368: abeja_peluda_low:hair25 42
+    400370: abeja_peluda_low:hair25 43
+    400372: abeja_peluda_low:hair25 44
+    400374: abeja_peluda_low:hair25 45
+    400376: abeja_peluda_low:hair25 46
+    400378: abeja_peluda_low:hair25 47
+    400380: abeja_peluda_low:hair25 48
+    400382: abeja_peluda_low:hair25 49
+    400384: abeja_peluda_low:hair25 5
+    400386: abeja_peluda_low:hair25 50
+    400388: abeja_peluda_low:hair25 51
+    400390: abeja_peluda_low:hair25 52
+    400392: abeja_peluda_low:hair25 53
+    400394: abeja_peluda_low:hair25 54
+    400396: abeja_peluda_low:hair25 55
+    400398: abeja_peluda_low:hair25 56
+    400400: abeja_peluda_low:hair25 6
+    400402: abeja_peluda_low:hair25 7
+    400404: abeja_peluda_low:hair25 8
+    400406: abeja_peluda_low:hair25 9
+    400408: abeja_peluda_low:hair26
+    400410: abeja_peluda_low:hair26 1
+    400412: abeja_peluda_low:hair26 10
+    400414: abeja_peluda_low:hair26 11
+    400416: abeja_peluda_low:hair26 12
+    400418: abeja_peluda_low:hair26 13
+    400420: abeja_peluda_low:hair26 14
+    400422: abeja_peluda_low:hair26 15
+    400424: abeja_peluda_low:hair26 16
+    400426: abeja_peluda_low:hair26 17
+    400428: abeja_peluda_low:hair26 18
+    400430: abeja_peluda_low:hair26 19
+    400432: abeja_peluda_low:hair26 2
+    400434: abeja_peluda_low:hair26 20
+    400436: abeja_peluda_low:hair26 21
+    400438: abeja_peluda_low:hair26 22
+    400440: abeja_peluda_low:hair26 23
+    400442: abeja_peluda_low:hair26 24
+    400444: abeja_peluda_low:hair26 25
+    400446: abeja_peluda_low:hair26 26
+    400448: abeja_peluda_low:hair26 27
+    400450: abeja_peluda_low:hair26 28
+    400452: abeja_peluda_low:hair26 29
+    400454: abeja_peluda_low:hair26 3
+    400456: abeja_peluda_low:hair26 30
+    400458: abeja_peluda_low:hair26 31
+    400460: abeja_peluda_low:hair26 32
+    400462: abeja_peluda_low:hair26 33
+    400464: abeja_peluda_low:hair26 34
+    400466: abeja_peluda_low:hair26 35
+    400468: abeja_peluda_low:hair26 36
+    400470: abeja_peluda_low:hair26 37
+    400472: abeja_peluda_low:hair26 38
+    400474: abeja_peluda_low:hair26 39
+    400476: abeja_peluda_low:hair26 4
+    400478: abeja_peluda_low:hair26 40
+    400480: abeja_peluda_low:hair26 41
+    400482: abeja_peluda_low:hair26 42
+    400484: abeja_peluda_low:hair26 43
+    400486: abeja_peluda_low:hair26 44
+    400488: abeja_peluda_low:hair26 45
+    400490: abeja_peluda_low:hair26 46
+    400492: abeja_peluda_low:hair26 47
+    400494: abeja_peluda_low:hair26 48
+    400496: abeja_peluda_low:hair26 49
+    400498: abeja_peluda_low:hair26 5
+    400500: abeja_peluda_low:hair26 50
+    400502: abeja_peluda_low:hair26 51
+    400504: abeja_peluda_low:hair26 52
+    400506: abeja_peluda_low:hair26 53
+    400508: abeja_peluda_low:hair26 54
+    400510: abeja_peluda_low:hair26 55
+    400512: abeja_peluda_low:hair26 56
+    400514: abeja_peluda_low:hair26 6
+    400516: abeja_peluda_low:hair26 7
+    400518: abeja_peluda_low:hair26 8
+    400520: abeja_peluda_low:hair26 9
+    400522: abeja_peluda_low:hair27
+    400524: abeja_peluda_low:hair27 1
+    400526: abeja_peluda_low:hair27 10
+    400528: abeja_peluda_low:hair27 11
+    400530: abeja_peluda_low:hair27 12
+    400532: abeja_peluda_low:hair27 13
+    400534: abeja_peluda_low:hair27 14
+    400536: abeja_peluda_low:hair27 15
+    400538: abeja_peluda_low:hair27 16
+    400540: abeja_peluda_low:hair27 17
+    400542: abeja_peluda_low:hair27 18
+    400544: abeja_peluda_low:hair27 19
+    400546: abeja_peluda_low:hair27 2
+    400548: abeja_peluda_low:hair27 20
+    400550: abeja_peluda_low:hair27 21
+    400552: abeja_peluda_low:hair27 22
+    400554: abeja_peluda_low:hair27 23
+    400556: abeja_peluda_low:hair27 24
+    400558: abeja_peluda_low:hair27 25
+    400560: abeja_peluda_low:hair27 26
+    400562: abeja_peluda_low:hair27 27
+    400564: abeja_peluda_low:hair27 28
+    400566: abeja_peluda_low:hair27 29
+    400568: abeja_peluda_low:hair27 3
+    400570: abeja_peluda_low:hair27 30
+    400572: abeja_peluda_low:hair27 31
+    400574: abeja_peluda_low:hair27 32
+    400576: abeja_peluda_low:hair27 33
+    400578: abeja_peluda_low:hair27 34
+    400580: abeja_peluda_low:hair27 35
+    400582: abeja_peluda_low:hair27 36
+    400584: abeja_peluda_low:hair27 37
+    400586: abeja_peluda_low:hair27 38
+    400588: abeja_peluda_low:hair27 39
+    400590: abeja_peluda_low:hair27 4
+    400592: abeja_peluda_low:hair27 40
+    400594: abeja_peluda_low:hair27 41
+    400596: abeja_peluda_low:hair27 42
+    400598: abeja_peluda_low:hair27 43
+    400600: abeja_peluda_low:hair27 44
+    400602: abeja_peluda_low:hair27 45
+    400604: abeja_peluda_low:hair27 46
+    400606: abeja_peluda_low:hair27 47
+    400608: abeja_peluda_low:hair27 48
+    400610: abeja_peluda_low:hair27 49
+    400612: abeja_peluda_low:hair27 5
+    400614: abeja_peluda_low:hair27 50
+    400616: abeja_peluda_low:hair27 51
+    400618: abeja_peluda_low:hair27 52
+    400620: abeja_peluda_low:hair27 53
+    400622: abeja_peluda_low:hair27 54
+    400624: abeja_peluda_low:hair27 55
+    400626: abeja_peluda_low:hair27 56
+    400628: abeja_peluda_low:hair27 6
+    400630: abeja_peluda_low:hair27 7
+    400632: abeja_peluda_low:hair27 8
+    400634: abeja_peluda_low:hair27 9
+    400636: abeja_peluda_low:hair28
+    400638: abeja_peluda_low:hair28 1
+    400640: abeja_peluda_low:hair28 10
+    400642: abeja_peluda_low:hair28 11
+    400644: abeja_peluda_low:hair28 12
+    400646: abeja_peluda_low:hair28 13
+    400648: abeja_peluda_low:hair28 14
+    400650: abeja_peluda_low:hair28 15
+    400652: abeja_peluda_low:hair28 16
+    400654: abeja_peluda_low:hair28 17
+    400656: abeja_peluda_low:hair28 18
+    400658: abeja_peluda_low:hair28 19
+    400660: abeja_peluda_low:hair28 2
+    400662: abeja_peluda_low:hair28 20
+    400664: abeja_peluda_low:hair28 21
+    400666: abeja_peluda_low:hair28 22
+    400668: abeja_peluda_low:hair28 23
+    400670: abeja_peluda_low:hair28 24
+    400672: abeja_peluda_low:hair28 25
+    400674: abeja_peluda_low:hair28 26
+    400676: abeja_peluda_low:hair28 27
+    400678: abeja_peluda_low:hair28 28
+    400680: abeja_peluda_low:hair28 29
+    400682: abeja_peluda_low:hair28 3
+    400684: abeja_peluda_low:hair28 30
+    400686: abeja_peluda_low:hair28 31
+    400688: abeja_peluda_low:hair28 32
+    400690: abeja_peluda_low:hair28 33
+    400692: abeja_peluda_low:hair28 34
+    400694: abeja_peluda_low:hair28 35
+    400696: abeja_peluda_low:hair28 36
+    400698: abeja_peluda_low:hair28 37
+    400700: abeja_peluda_low:hair28 38
+    400702: abeja_peluda_low:hair28 39
+    400704: abeja_peluda_low:hair28 4
+    400706: abeja_peluda_low:hair28 40
+    400708: abeja_peluda_low:hair28 41
+    400710: abeja_peluda_low:hair28 42
+    400712: abeja_peluda_low:hair28 43
+    400714: abeja_peluda_low:hair28 44
+    400716: abeja_peluda_low:hair28 45
+    400718: abeja_peluda_low:hair28 46
+    400720: abeja_peluda_low:hair28 47
+    400722: abeja_peluda_low:hair28 48
+    400724: abeja_peluda_low:hair28 49
+    400726: abeja_peluda_low:hair28 5
+    400728: abeja_peluda_low:hair28 50
+    400730: abeja_peluda_low:hair28 51
+    400732: abeja_peluda_low:hair28 52
+    400734: abeja_peluda_low:hair28 53
+    400736: abeja_peluda_low:hair28 54
+    400738: abeja_peluda_low:hair28 55
+    400740: abeja_peluda_low:hair28 56
+    400742: abeja_peluda_low:hair28 6
+    400744: abeja_peluda_low:hair28 7
+    400746: abeja_peluda_low:hair28 8
+    400748: abeja_peluda_low:hair28 9
+    400750: abeja_peluda_low:head
+    400752: abeja_peluda_low:head 1
+    400754: abeja_peluda_low:hips
+    400756: abeja_peluda_low:hips_ctlr
+    400758: abeja_peluda_low:ikHandle1
+    400760: abeja_peluda_low:ikHandle10
+    400762: abeja_peluda_low:ikHandle11
+    400764: abeja_peluda_low:ikHandle3
+    400766: abeja_peluda_low:ikHandle4
+    400768: abeja_peluda_low:ikHandle6
+    400770: abeja_peluda_low:ikHandle7
+    400772: abeja_peluda_low:ikHandle8
+    400774: abeja_peluda_low:ikHandle9
+    400776: abeja_peluda_low:jaw
+    400778: abeja_peluda_low:jaw_ctrl
+    400780: abeja_peluda_low:jawtop
+    400782: abeja_peluda_low:Jawtop_ctrl
+    400784: abeja_peluda_low:joint
+    400786: abeja_peluda_low:leg03R
+    400788: abeja_peluda_low:Leg_back_Left
+    400790: abeja_peluda_low:Leg_back_Left_med
+    400792: abeja_peluda_low:Leg_back_Left_top
+    400794: abeja_peluda_low:Leg_back_Right
+    400796: abeja_peluda_low:Leg_back_Right_med
+    400798: abeja_peluda_low:Leg_back_Right_top
+    400800: abeja_peluda_low:Leg_front_Left
+    400802: abeja_peluda_low:Leg_Front_Left_Midle
+    400804: abeja_peluda_low:Leg_front_Left_Midle
+    400806: abeja_peluda_low:Leg_front_Right
+    400808: abeja_peluda_low:Leg_Front_Right_Midle
+    400810: abeja_peluda_low:Leg_front_Right_Midle
+    400812: abeja_peluda_low:Leg_med_Left
+    400814: abeja_peluda_low:Leg_med_Left_med1
+    400816: abeja_peluda_low:Leg_med_Left_top
+    400818: abeja_peluda_low:Leg_med_Right
+    400820: abeja_peluda_low:Leg_med_Right_med1
+    400822: abeja_peluda_low:Leg_med_Right_top
+    400824: abeja_peluda_low:Main
+    400826: abeja_peluda_low:neck
+    400828: abeja_peluda_low:neck_ctrl
+    400830: abeja_peluda_low:pelo
+    400832: abeja_peluda_low:pole_back_left
+    400834: abeja_peluda_low:pole_back_right
+    400836: abeja_peluda_low:pole_front_left
+    400838: abeja_peluda_low:pole_front_right
+    400840: abeja_peluda_low:pole_med_left
+    400842: abeja_peluda_low:pole_med_right
+    400844: abeja_peluda_low:pole_tail_right
+    400846: abeja_peluda_low:polySurface1
+    400848: abeja_peluda_low:Root
+    400850: abeja_peluda_low:spine
+    400852: abeja_peluda_low:spinecrl
+    400854: abeja_peluda_low:tail1
+    400856: abeja_peluda_low:tail2
+    400858: abeja_peluda_low:Tail_ctrl
+    400860: abeja_peluda_low:tail_top
+    400862: abeja_peluda_low:torax
+    400864: abeja_peluda_low:wing01R
+    400866: abeja_peluda_low:wing_Left
+    400868: abeja_peluda_low:Wing_Left_top
+    400870: abeja_peluda_low:wing_Right
+    400872: abeja_peluda_low:Wing_Right_top
+    400874: //RootNode
+    400876: ant
+    400878: ant_Left_1
+    400880: ant_Left_2
+    400882: ant_Left_top
+    400884: ant_Right_1
+    400886: ant_Right_2
+    400888: ant_Right_top
+    400890: bee
+    400892: bee_hair
+    400894: clavicle
+    400896: clavicle_ctrl
+    400898: ctrl_ant_left
+    400900: ctrl_ant_right
+    400902: ctrl_leg_back_left
+    400904: ctrl_leg_back_right
+    400906: ctrl_leg_front_left
+    400908: ctrl_leg_front_right
+    400910: ctrl_leg_midle_left
+    400912: ctrl_leg_midle_right
+    400914: ctrl_wing_left
+    400916: ctrl_wing_right
+    400918: eyes
+    400920: group1
+    400922: group10
+    400924: group11
+    400926: group12
+    400928: group13
+    400930: group14
+    400932: group15
+    400934: group16
+    400936: group17
+    400938: group18
+    400940: group19
+    400942: group2
+    400944: group20
+    400946: group21
+    400948: group22
+    400950: group23
+    400952: group24
+    400954: group25
+    400956: group26
+    400958: group27
+    400960: group28
+    400962: group29
+    400964: group3
+    400966: group30
+    400968: group31
+    400970: group32
+    400972: group33
+    400974: group34
+    400976: group35
+    400978: group36
+    400980: group37
+    400982: group38
+    400984: group39
+    400986: group4
+    400988: group40
+    400990: group41
+    400992: group42
+    400994: group43
+    400996: group43 1
+    400998: group43 2
+    401000: group44
+    401002: group44 1
+    401004: group44 2
+    401006: group45
+    401008: group45 1
+    401010: group45 2
+    401012: group46
+    401014: group46 1
+    401016: group46 2
+    401018: group47
+    401020: group47 1
+    401022: group47 2
+    401024: group48
+    401026: group49
+    401028: group5
+    401030: group50
+    401032: group51
+    401034: group6
+    401036: group7
+    401038: group8
+    401040: group9
+    401042: group_abdomen
+    401044: group_bee
+    401046: hair
+    401048: hair10
+    401050: hair11
+    401052: hair12
+    401054: hair13
+    401056: hair24
+    401058: hair24 1
+    401060: hair24 10
+    401062: hair24 11
+    401064: hair24 12
+    401066: hair24 13
+    401068: hair24 14
+    401070: hair24 15
+    401072: hair24 16
+    401074: hair24 17
+    401076: hair24 18
+    401078: hair24 19
+    401080: hair24 2
+    401082: hair24 20
+    401084: hair24 21
+    401086: hair24 22
+    401088: hair24 23
+    401090: hair24 24
+    401092: hair24 25
+    401094: hair24 26
+    401096: hair24 27
+    401098: hair24 28
+    401100: hair24 29
+    401102: hair24 3
+    401104: hair24 30
+    401106: hair24 31
+    401108: hair24 32
+    401110: hair24 33
+    401112: hair24 34
+    401114: hair24 35
+    401116: hair24 36
+    401118: hair24 37
+    401120: hair24 38
+    401122: hair24 39
+    401124: hair24 4
+    401126: hair24 40
+    401128: hair24 41
+    401130: hair24 42
+    401132: hair24 43
+    401134: hair24 44
+    401136: hair24 45
+    401138: hair24 46
+    401140: hair24 47
+    401142: hair24 48
+    401144: hair24 49
+    401146: hair24 5
+    401148: hair24 50
+    401150: hair24 51
+    401152: hair24 52
+    401154: hair24 53
+    401156: hair24 54
+    401158: hair24 55
+    401160: hair24 56
+    401162: hair24 6
+    401164: hair24 7
+    401166: hair24 8
+    401168: hair24 9
+    401170: hair25
+    401172: hair25 1
+    401174: hair25 10
+    401176: hair25 11
+    401178: hair25 12
+    401180: hair25 13
+    401182: hair25 14
+    401184: hair25 15
+    401186: hair25 16
+    401188: hair25 17
+    401190: hair25 18
+    401192: hair25 19
+    401194: hair25 2
+    401196: hair25 20
+    401198: hair25 21
+    401200: hair25 22
+    401202: hair25 23
+    401204: hair25 24
+    401206: hair25 25
+    401208: hair25 26
+    401210: hair25 27
+    401212: hair25 28
+    401214: hair25 29
+    401216: hair25 3
+    401218: hair25 30
+    401220: hair25 31
+    401222: hair25 32
+    401224: hair25 33
+    401226: hair25 34
+    401228: hair25 35
+    401230: hair25 36
+    401232: hair25 37
+    401234: hair25 38
+    401236: hair25 39
+    401238: hair25 4
+    401240: hair25 40
+    401242: hair25 41
+    401244: hair25 42
+    401246: hair25 43
+    401248: hair25 44
+    401250: hair25 45
+    401252: hair25 46
+    401254: hair25 47
+    401256: hair25 48
+    401258: hair25 49
+    401260: hair25 5
+    401262: hair25 50
+    401264: hair25 51
+    401266: hair25 52
+    401268: hair25 53
+    401270: hair25 54
+    401272: hair25 55
+    401274: hair25 56
+    401276: hair25 6
+    401278: hair25 7
+    401280: hair25 8
+    401282: hair25 9
+    401284: hair26
+    401286: hair26 1
+    401288: hair26 10
+    401290: hair26 11
+    401292: hair26 12
+    401294: hair26 13
+    401296: hair26 14
+    401298: hair26 15
+    401300: hair26 16
+    401302: hair26 17
+    401304: hair26 18
+    401306: hair26 19
+    401308: hair26 2
+    401310: hair26 20
+    401312: hair26 21
+    401314: hair26 22
+    401316: hair26 23
+    401318: hair26 24
+    401320: hair26 25
+    401322: hair26 26
+    401324: hair26 27
+    401326: hair26 28
+    401328: hair26 29
+    401330: hair26 3
+    401332: hair26 30
+    401334: hair26 31
+    401336: hair26 32
+    401338: hair26 33
+    401340: hair26 34
+    401342: hair26 35
+    401344: hair26 36
+    401346: hair26 37
+    401348: hair26 38
+    401350: hair26 39
+    401352: hair26 4
+    401354: hair26 40
+    401356: hair26 41
+    401358: hair26 42
+    401360: hair26 43
+    401362: hair26 44
+    401364: hair26 45
+    401366: hair26 46
+    401368: hair26 47
+    401370: hair26 48
+    401372: hair26 49
+    401374: hair26 5
+    401376: hair26 50
+    401378: hair26 51
+    401380: hair26 52
+    401382: hair26 53
+    401384: hair26 54
+    401386: hair26 55
+    401388: hair26 56
+    401390: hair26 6
+    401392: hair26 7
+    401394: hair26 8
+    401396: hair26 9
+    401398: hair27
+    401400: hair27 1
+    401402: hair27 10
+    401404: hair27 11
+    401406: hair27 12
+    401408: hair27 13
+    401410: hair27 14
+    401412: hair27 15
+    401414: hair27 16
+    401416: hair27 17
+    401418: hair27 18
+    401420: hair27 19
+    401422: hair27 2
+    401424: hair27 20
+    401426: hair27 21
+    401428: hair27 22
+    401430: hair27 23
+    401432: hair27 24
+    401434: hair27 25
+    401436: hair27 26
+    401438: hair27 27
+    401440: hair27 28
+    401442: hair27 29
+    401444: hair27 3
+    401446: hair27 30
+    401448: hair27 31
+    401450: hair27 32
+    401452: hair27 33
+    401454: hair27 34
+    401456: hair27 35
+    401458: hair27 36
+    401460: hair27 37
+    401462: hair27 38
+    401464: hair27 39
+    401466: hair27 4
+    401468: hair27 40
+    401470: hair27 41
+    401472: hair27 42
+    401474: hair27 43
+    401476: hair27 44
+    401478: hair27 45
+    401480: hair27 46
+    401482: hair27 47
+    401484: hair27 48
+    401486: hair27 49
+    401488: hair27 5
+    401490: hair27 50
+    401492: hair27 51
+    401494: hair27 52
+    401496: hair27 53
+    401498: hair27 54
+    401500: hair27 55
+    401502: hair27 56
+    401504: hair27 6
+    401506: hair27 7
+    401508: hair27 8
+    401510: hair27 9
+    401512: hair28
+    401514: hair28 1
+    401516: hair28 10
+    401518: hair28 11
+    401520: hair28 12
+    401522: hair28 13
+    401524: hair28 14
+    401526: hair28 15
+    401528: hair28 16
+    401530: hair28 17
+    401532: hair28 18
+    401534: hair28 19
+    401536: hair28 2
+    401538: hair28 20
+    401540: hair28 21
+    401542: hair28 22
+    401544: hair28 23
+    401546: hair28 24
+    401548: hair28 25
+    401550: hair28 26
+    401552: hair28 27
+    401554: hair28 28
+    401556: hair28 29
+    401558: hair28 3
+    401560: hair28 30
+    401562: hair28 31
+    401564: hair28 32
+    401566: hair28 33
+    401568: hair28 34
+    401570: hair28 35
+    401572: hair28 36
+    401574: hair28 37
+    401576: hair28 38
+    401578: hair28 39
+    401580: hair28 4
+    401582: hair28 40
+    401584: hair28 41
+    401586: hair28 42
+    401588: hair28 43
+    401590: hair28 44
+    401592: hair28 45
+    401594: hair28 46
+    401596: hair28 47
+    401598: hair28 48
+    401600: hair28 49
+    401602: hair28 5
+    401604: hair28 50
+    401606: hair28 51
+    401608: hair28 52
+    401610: hair28 53
+    401612: hair28 54
+    401614: hair28 55
+    401616: hair28 56
+    401618: hair28 6
+    401620: hair28 7
+    401622: hair28 8
+    401624: hair28 9
+    401626: head
+    401628: head 1
+    401630: hips
+    401632: hips_ctlr
+    401634: ikHandle1
+    401636: ikHandle10
+    401638: ikHandle11
+    401640: ikHandle3
+    401642: ikHandle4
+    401644: ikHandle6
+    401646: ikHandle7
+    401648: ikHandle8
+    401650: ikHandle9
+    401652: jaw
+    401654: jaw_ctrl
+    401656: jawtop
+    401658: Jawtop_ctrl
+    401660: joint
+    401662: leg03R
+    401664: Leg_back_Left
+    401666: Leg_back_Left_med
+    401668: Leg_back_Left_top
+    401670: Leg_back_Right
+    401672: Leg_back_Right_med
+    401674: Leg_back_Right_top
+    401676: Leg_front_Left
+    401678: Leg_Front_Left_Midle
+    401680: Leg_front_Left_Midle
+    401682: Leg_front_Right
+    401684: Leg_Front_Right_Midle
+    401686: Leg_front_Right_Midle
+    401688: Leg_med_Left
+    401690: Leg_med_Left_med1
+    401692: Leg_med_Left_top
+    401694: Leg_med_Right
+    401696: Leg_med_Right_med1
+    401698: Leg_med_Right_top
+    401700: Main
+    401702: neck
+    401704: neck_ctrl
+    401706: pelo
+    401708: pole_back_left
+    401710: pole_back_right
+    401712: pole_front_left
+    401714: pole_front_right
+    401716: pole_med_left
+    401718: pole_med_right
+    401720: pole_tail_right
+    401722: polySurface1
+    401724: Root
+    401726: spine
+    401728: spinecrl
+    401730: tail1
+    401732: tail2
+    401734: Tail_ctrl
+    401736: tail_top
+    401738: torax
+    401740: wing01R
+    401742: wing_Left
+    401744: Wing_Left_top
+    401746: wing_Right
+    401748: Wing_Right_top
+    2100000: abeja_peluda_low_HeadC
+    2100002: abeja_peluda_low_WingsC
+    2100004: abeja_peluda_low_hair30
+    2300000: abeja_peluda_low:bee_hair
+    2300002: bee_hair
+    3300000: abeja_peluda_low:bee_hair
+    3300002: bee_hair
+    4300000: abeja_peluda_low:torax
+    4300002: abeja_peluda_low:polySurface1
+    4300004: abeja_peluda_low:ant
+    4300006: abeja_peluda_low:eyes
+    4300008: abeja_peluda_low:pelo
+    4300010: abeja_peluda_low:wing01R
+    4300012: abeja_peluda_low:leg03R
+    4300014: abeja_peluda_low:group_abdomen
+    4300016: abeja_peluda_low:bee_hair
+    4300018: torax
+    4300020: polySurface1
+    4300022: ant
+    4300024: eyes
+    4300026: pelo
+    4300028: wing01R
+    4300030: leg03R
+    4300032: group_abdomen
+    4300034: bee_hair
+    7400000: idlebee
+    7400002: laandingbee
+    7400004: flybee
+    7400006: land revert
+    9500000: //RootNode
+    13700000: abeja_peluda_low:ant
+    13700002: abeja_peluda_low:eyes
+    13700004: abeja_peluda_low:group_abdomen
+    13700006: abeja_peluda_low:leg03R
+    13700008: abeja_peluda_low:pelo
+    13700010: abeja_peluda_low:polySurface1
+    13700012: abeja_peluda_low:torax
+    13700014: abeja_peluda_low:wing01R
+    13700016: ant
+    13700018: eyes
+    13700020: group_abdomen
+    13700022: leg03R
+    13700024: pelo
+    13700026: polySurface1
+    13700028: torax
+    13700030: wing01R
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HeadC
+    second: {fileID: 2100000, guid: de3be66478e68a64386642b4a21ca57a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WingsC
+    second: {fileID: 2100000, guid: de3be66478e68a64386642b4a21ca57a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: abeja_peluda_low_HeadC
+    second: {fileID: 2100000, guid: de3be66478e68a64386642b4a21ca57a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: abeja_peluda_low_WingsC
+    second: {fileID: 2100000, guid: de3be66478e68a64386642b4a21ca57a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: abeja_peluda_low_hair30
+    second: {fileID: 2100000, guid: 6ab7065e628cb7249b4c9389b497d7db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hair30
+    second: {fileID: 2100000, guid: 6ab7065e628cb7249b4c9389b497d7db, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: abeja_peluda_low:Main
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idlebee
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: laandingbee
+      takeName: Take 001
+      firstFrame: 41
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: flybee
+      takeName: Take 001
+      firstFrame: 50
+      lastFrame: 68
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: land revert
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
