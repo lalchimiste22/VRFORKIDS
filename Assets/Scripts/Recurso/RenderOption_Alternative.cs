@@ -22,12 +22,13 @@ public class RenderOption_AlternativeFactory : IRenderOptionFactory
     {
         List<RenderOption> RenderOptions = new List<RenderOption>();
 
-        foreach(Recurso.OpcionContenido Opt in Options)
+        for(int i = 0; i < Options.Length; i++)
         {
+            Recurso.OpcionContenido Opt = Options[i];
             GameObject instantiated = GameObject.Instantiate(Blueprint);
             RenderOption_Alternative alternative = instantiated.GetComponent<RenderOption_Alternative>();
 
-            alternative.Assign(Opt);
+            alternative.Assign(Opt, i);
             RenderOptions.Add(alternative);
         }
 
@@ -41,11 +42,13 @@ public class RenderOption_Alternative : RenderOption {
     public UnityEngine.UI.Text Label;
     public UnityEngine.UI.Text IndexLabel;
 
-    public void Assign(Recurso.OpcionContenido Option)
+    public void Assign(Recurso.OpcionContenido Option, int index)
     {
         //We should be assigned to a toggle, so we can search it and init the values
         Toggle.isOn = false;
         Label.text = Option.Data;
+        int asciiValue = (int)'A' + index;
+        IndexLabel.text = ((char)asciiValue).ToString();
     }
 
     public override IRenderOptionFactory GetFactory()

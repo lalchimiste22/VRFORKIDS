@@ -15,6 +15,10 @@ public class Recurso : MonoBehaviour {
     public UnityEvent OnShownEvent;
     public UnityEvent OnHiddenEvent;
 
+    public bool bOpenOnStart = false;
+    private bool bShown = false;
+    private bool bDeferedOpen = false;
+
     public enum TipoContenido
     {
         Texto,
@@ -47,7 +51,7 @@ public class Recurso : MonoBehaviour {
                 switch (key)
                 {
                     case "data":
-                        this.Data = j.str;
+                        this.Data = System.Text.RegularExpressions.Regex.Unescape(j.str);
                         break;
                     case "imagen":
                         this.ImagenURL= j.str.Replace("\\","");
@@ -272,9 +276,13 @@ public class Recurso : MonoBehaviour {
             }
             
         }
-
+        
         //The title is common, so we should set it up here
         TitleText.text = Nombre;
+
+        //Check if we're open, we should reset the current page
+        if (bShown)
+            GoToPage(CurrentPage);
     }
 
     public void Start()
@@ -326,6 +334,18 @@ public class Recurso : MonoBehaviour {
 
         //Manually hide, we don't want to start showing resources without them being selected
         UI.SetActive(false);
+
+        //Check for auto open config
+        bDeferedOpen = bOpenOnStart;
+    }
+
+    private void Update()
+    {
+        if(bDeferedOpen)
+        {
+            Show();
+            bDeferedOpen = false;
+        }
     }
 
     /// <summary>
@@ -333,16 +353,19 @@ public class Recurso : MonoBehaviour {
     /// </summary>
     public void Show(int ShowPage = 0)
     {
+        //Has to be first... if not, the internal IEnumerator from the yield will not run (as its deactivated)
+        UI.SetActive(true);
+
         //Show the page if valid, if not, fallback to first page
         if (!GoToPage(ShowPage))
             GoToPage(0);
 
         //Show the detail zoom, which will trigger the movement and all
         DetailZoom.ShowZoomDetail();
-        UI.SetActive(true);
 
         //Invoke the event
         OnShownEvent.Invoke();
+        bShown = true;
     }
 
     /// <summary>
@@ -356,6 +379,7 @@ public class Recurso : MonoBehaviour {
 
         //Invoke the event
         OnHiddenEvent.Invoke();
+        bShown = false;
     }
 
     /// <summary>

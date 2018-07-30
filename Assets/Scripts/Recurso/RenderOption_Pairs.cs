@@ -148,11 +148,11 @@ public class RenderOption_Pairs : RenderOption {
 
     private IEnumerator LoadImage(string ImageUrl, PortLocation Location)
     {
-        Debug.Log("Starting Laod Image from url: " + ImageUrl + " on port location: " + Location);
+        Debug.Log("Starting Load Image from url: " + ImageUrl + " on port location: " + Location);
         using (WWW www = new WWW(ImageUrl))
         {
             yield return www;
-
+            
             if (www.error != null)
             {
                 Debug.LogError(www.error);

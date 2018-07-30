@@ -18,7 +18,7 @@ public struct Trans
 
 public class EaseMoveTo : MonoBehaviour {
 
-    private bool bEasingIn = false;
+    public bool bEasingIn { get; private set; }
     private Transform _transform;
     private Trans targetTransform;
     private Vector3 velocity;
@@ -26,17 +26,21 @@ public class EaseMoveTo : MonoBehaviour {
     private float velocityAngleY;
     private float velocityAngleZ;
     public float SmoothTime = 1.0f;
+    public float CurrentTime { get; private set; }
 
     // Use this for initialization
     void Start () {
         _transform = gameObject.transform;
         velocity = Vector3.zero;
+        bEasingIn = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (!bEasingIn)
             return;
+
+        CurrentTime += Time.deltaTime;
 
         Vector3 nextPosition = Vector3.SmoothDamp(_transform.position, targetTransform.position, ref velocity, SmoothTime);
         float nextAngleX = Mathf.SmoothDampAngle(_transform.eulerAngles.x, targetTransform.rotation.eulerAngles.x, ref velocityAngleX, SmoothTime);
@@ -52,7 +56,13 @@ public class EaseMoveTo : MonoBehaviour {
 
     public void SmoothTransport(Trans Destination)
     {
+        CurrentTime = 0.0f;
         bEasingIn = true;
         targetTransform = Destination;
+    }
+
+    public void Abort()
+    {
+        bEasingIn = false;
     }
 }
