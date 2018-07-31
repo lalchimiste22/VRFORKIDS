@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public struct Trans
 {
@@ -25,8 +26,10 @@ public class EaseMoveTo : MonoBehaviour {
     private float velocityAngleX;
     private float velocityAngleY;
     private float velocityAngleZ;
-    public float SmoothTime = 1.0f;
+    public float DefaultSmoothTime = 1.0f;
+    private float SmoothTime = 1.0f;
     public float CurrentTime { get; private set; }
+    private Action OnCompletion;
 
     // Use this for initialization
     void Start () {
@@ -51,14 +54,23 @@ public class EaseMoveTo : MonoBehaviour {
         gameObject.transform.eulerAngles = new Vector3(nextAngleX, nextAngleY, nextAngleZ);
 
         if (Mathf.Abs((nextPosition - targetTransform.position).magnitude) < 0.01 && Mathf.Abs(nextAngleX - targetTransform.rotation.eulerAngles.x) < 0.01 && Mathf.Abs(nextAngleY - targetTransform.rotation.eulerAngles.y) < 0.01 && Mathf.Abs(nextAngleZ - targetTransform.rotation.eulerAngles.z) < 0.01)
+        {
             bEasingIn = false;
+
+            if (OnCompletion != null)
+                OnCompletion.Invoke();
+        }
     }
 
-    public void SmoothTransport(Trans Destination)
+    public void SmoothTransport(Trans Destination, float NewSmoothTime = -1.0f, Action InOnCompletion = null)
     {
         CurrentTime = 0.0f;
         bEasingIn = true;
         targetTransform = Destination;
+        OnCompletion = InOnCompletion;
+
+        SmoothTime = NewSmoothTime == -1.0f ? DefaultSmoothTime : NewSmoothTime;
+
     }
 
     public void Abort()

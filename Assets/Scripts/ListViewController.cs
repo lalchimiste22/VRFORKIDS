@@ -5,6 +5,8 @@ using UnityEngine;
 public class ListViewController : MonoBehaviour {
 
     private List<GameObject> ListItems = new List<GameObject>();
+    public RectTransform Content;
+    public UnityEngine.UI.ScrollRect ScrollRect;
 
     private void Start()
     {
@@ -24,11 +26,20 @@ public class ListViewController : MonoBehaviour {
     public void Add(GameObject li)
     {
         ListItems.Add(li);
-        li.transform.parent = transform;
-
+        li.transform.parent = Content.transform;
 
         li.transform.localPosition = Vector3.zero;
         li.transform.localScale = Vector3.one;
         li.transform.localRotation = Quaternion.Euler(Vector3.zero);
+    }
+
+    public void ScrollUp()
+    {
+        ScrollRect.verticalNormalizedPosition = 1;
+    }
+
+    public void ScrollDown()
+    {
+        ScrollRect.verticalNormalizedPosition = 0;
     }
 }

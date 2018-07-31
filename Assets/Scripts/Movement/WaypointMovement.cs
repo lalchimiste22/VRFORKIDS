@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+//using UnityEditor;
 using UnityEngine.Events;
 using System.Linq;
 
-[CustomEditor(typeof(WaypointMovement))]
+/*[CustomEditor(typeof(WaypointMovement))]
 public class ObjectBuilderEditor : Editor
 {
     public override void OnInspectorGUI()
@@ -18,7 +18,7 @@ public class ObjectBuilderEditor : Editor
             myScript.ProcessChildTransforms();
         }
     }
-}
+}*/
 
 
 public class WaypointMovement : MonoBehaviour {

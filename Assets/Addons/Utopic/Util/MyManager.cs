@@ -13,6 +13,10 @@ public class MyManager : MonoBehaviour {
     //Server URL
     public string baseUrl = "http://localhost:8000/";
 
+    public UnityEngine.UI.Image FadeImage;
+
+    public float CrossFadeDuration = 1.5f;
+
 	[RangeAttribute(0f,10f)]
 	public float timeScale = 1f;
 	public bool findTagPlayer = true;
@@ -22,7 +26,13 @@ public class MyManager : MonoBehaviour {
 	public MyLevelManager loader { get; private set;}
 	public MyAudioManager audioManager { get; private set;}
 
-	void Awake () {
+    private void Start()
+    {
+        if (FadeImage)
+            FadeImage.canvasRenderer.SetAlpha(0.0f);
+    }
+
+    void Awake () {
 		// Singleton:
 		if (Instance == null)
 			Instance = this;
@@ -77,6 +87,9 @@ public class MyManager : MonoBehaviour {
         Dictionary<string, Recurso> mappedResources = new Dictionary<string, Recurso>();
         foreach (Recurso r in resources)
         {
+            if (mappedResources.ContainsKey(r.Codigo))
+                continue;
+
             codes.Add(r.Codigo);
             mappedResources.Add(r.Codigo, r);
         }
@@ -107,5 +120,28 @@ public class MyManager : MonoBehaviour {
                 }
             }
         }
+    }
+
+    public void FadeOut(System.Action OnCompletion = null)
+    {
+        FadeImage.CrossFadeAlpha(1.0f, CrossFadeDuration, false);
+
+        if(OnCompletion != null)
+            StartCoroutine(WaitForCrossFade(OnCompletion));
+    }
+
+    public void FadeIn(System.Action OnCompletion = null)
+    {
+        FadeImage.CrossFadeAlpha(0.0f, CrossFadeDuration, false);
+
+        if (OnCompletion != null)
+            StartCoroutine(WaitForCrossFade(OnCompletion));
+    }
+
+    IEnumerator WaitForCrossFade(System.Action OnCompletion)
+    {
+        yield return new WaitForSeconds(CrossFadeDuration);
+
+        OnCompletion.Invoke();
     }
 }
