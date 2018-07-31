@@ -9,9 +9,9 @@ public class PointerEvents : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     private bool bPointerInside = false;
     public UnityEvent OnPointerStay;
 
-    void Start()
+    void OnDisable()
     {
-
+        bPointerInside = false;
     }
 
     void Update()
