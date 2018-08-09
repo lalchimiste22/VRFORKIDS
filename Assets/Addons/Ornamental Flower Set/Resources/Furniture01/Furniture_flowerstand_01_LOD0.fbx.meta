@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 685a396eeb131804a9360ce741da1163
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: Furniture_flowerstand_01
     100002: //RootNode
@@ -11,7 +11,13 @@ ModelImporter:
     3300000: Furniture_flowerstand_01
     4300000: Furniture_flowerstand_01
     9500000: //RootNode
-  externalObjects: {}
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_flowerstand_01_00_mt
+    second: {fileID: 2100000, guid: ca76864874476f54b9cd716dcb329edb, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
@@ -62,6 +68,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

@@ -38,7 +38,7 @@ class NvrScreenCapture : MonoBehaviour
 
     private void CaptureByUnity(string mFileName)
     {
-        Application.CaptureScreenshot(mFileName, 0);
+        ScreenCapture.CaptureScreenshot(mFileName, 0);
     }
 
     /// <summary>

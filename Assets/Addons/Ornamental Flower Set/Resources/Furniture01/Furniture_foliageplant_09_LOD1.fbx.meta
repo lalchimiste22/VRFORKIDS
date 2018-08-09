@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 98e2bcc51e457ea419e8e1e9d06155f6
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: F_foliageplant_09_LOD1_01
     100002: F_foliageplant_09_LOD1_02
@@ -16,7 +16,18 @@ ModelImporter:
     4300000: F_foliageplant_09_LOD1_01
     4300002: F_foliageplant_09_LOD1_02
     9500000: //RootNode
-  externalObjects: {}
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_foliageplant_09_00_mt
+    second: {fileID: 2100000, guid: 9a4236c253a159c449e6bc54a40836bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_foliageplant_09_01_mt
+    second: {fileID: 2100000, guid: d668ca872ee44b346a5fdced111d888c, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
@@ -67,6 +78,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
