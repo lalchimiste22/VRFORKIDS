@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: 3ee56e926977eea4bb1e335aa2854a05
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: AORTA
+    100002: ArteriaCircunfleja
+    100004: ArteriaCoronariaDerecha
+    100006: ArteriaPolmonare
+    100008: AuriculaDerecha
+    100010: AuriculaIzquierda
+    100012: BICUSPIDE
+    100014: Common
+    100016: //RootNode
+    100018: exterior
+    100020: GranVenaCardiaca
+    100022: HEART
+    100024: heart
+    100026: Interior
+    100028: LegamentoArterioso
+    100030: Miocardio
+    100032: TRICUSPIDE
+    100034: valvola10
+    100036: valvola11
+    100038: valvola6
+    100040: valvola7
+    100042: valvola8
+    100044: valvola9
+    100046: VenaCavaInferior
+    100048: VenaCavaSuperior
+    100050: VenaPulmonarDerecha
+    100052: VenaPulmonarDerecha1
+    100054: VenaPulmonarIzquierda
+    100056: VenaPulmonarIzquierda.001
+    100058: VeneCardiacaAnterior
+    100060: VentriculoDerecho
+    100062: VentriculoIzquierdo
+    400000: AORTA
+    400002: ArteriaCircunfleja
+    400004: ArteriaCoronariaDerecha
+    400006: ArteriaPolmonare
+    400008: AuriculaDerecha
+    400010: AuriculaIzquierda
+    400012: BICUSPIDE
+    400014: Common
+    400016: //RootNode
+    400018: exterior
+    400020: GranVenaCardiaca
+    400022: HEART
+    400024: heart
+    400026: Interior
+    400028: LegamentoArterioso
+    400030: Miocardio
+    400032: TRICUSPIDE
+    400034: valvola10
+    400036: valvola11
+    400038: valvola6
+    400040: valvola7
+    400042: valvola8
+    400044: valvola9
+    400046: VenaCavaInferior
+    400048: VenaCavaSuperior
+    400050: VenaPulmonarDerecha
+    400052: VenaPulmonarDerecha1
+    400054: VenaPulmonarIzquierda
+    400056: VenaPulmonarIzquierda.001
+    400058: VeneCardiacaAnterior
+    400060: VentriculoDerecho
+    400062: VentriculoIzquierdo
+    2100000: material24
+    2100002: scene_material8
+    2100004: material44
+    2100006: material
+    2100008: material39
+    2100010: material55
+    2100012: material57
+    2100014: material61
+    2100016: scene_material10
+    2100018: scene_material11
+    2100020: scene_material9
+    2100022: scene_material12
+    2100024: scene_material17
+    2100026: scene_material13
+    2100028: scene_material15
+    2100030: scene_material16
+    2300000: AORTA
+    2300002: ArteriaCircunfleja
+    2300004: ArteriaCoronariaDerecha
+    2300006: ArteriaPolmonare
+    2300008: AuriculaDerecha
+    2300010: AuriculaIzquierda
+    2300012: BICUSPIDE
+    2300014: GranVenaCardiaca
+    2300016: HEART
+    2300018: heart
+    2300020: LegamentoArterioso
+    2300022: Miocardio
+    2300024: TRICUSPIDE
+    2300026: valvola10
+    2300028: valvola11
+    2300030: valvola6
+    2300032: valvola7
+    2300034: valvola8
+    2300036: valvola9
+    2300038: VenaCavaInferior
+    2300040: VenaCavaSuperior
+    2300042: VenaPulmonarDerecha
+    2300044: VenaPulmonarDerecha1
+    2300046: VenaPulmonarIzquierda
+    2300048: VenaPulmonarIzquierda.001
+    2300050: VeneCardiacaAnterior
+    2300052: VentriculoDerecho
+    2300054: VentriculoIzquierdo
+    3300000: AORTA
+    3300002: ArteriaCircunfleja
+    3300004: ArteriaCoronariaDerecha
+    3300006: ArteriaPolmonare
+    3300008: AuriculaDerecha
+    3300010: AuriculaIzquierda
+    3300012: BICUSPIDE
+    3300014: GranVenaCardiaca
+    3300016: HEART
+    3300018: heart
+    3300020: LegamentoArterioso
+    3300022: Miocardio
+    3300024: TRICUSPIDE
+    3300026: valvola10
+    3300028: valvola11
+    3300030: valvola6
+    3300032: valvola7
+    3300034: valvola8
+    3300036: valvola9
+    3300038: VenaCavaInferior
+    3300040: VenaCavaSuperior
+    3300042: VenaPulmonarDerecha
+    3300044: VenaPulmonarDerecha1
+    3300046: VenaPulmonarIzquierda
+    3300048: VenaPulmonarIzquierda.001
+    3300050: VeneCardiacaAnterior
+    3300052: VentriculoDerecho
+    3300054: VentriculoIzquierdo
+    4300000: ArteriaPolmonare
+    4300002: LegamentoArterioso
+    4300004: AORTA
+    4300006: VenaPulmonarDerecha
+    4300008: VenaPulmonarDerecha1
+    4300010: VenaCavaInferior
+    4300012: VenaCavaSuperior
+    4300014: VenaPulmonarIzquierda.001
+    4300016: HEART
+    4300018: VenaPulmonarIzquierda
+    4300020: VeneCardiacaAnterior
+    4300022: ArteriaCircunfleja
+    4300024: ArteriaCoronariaDerecha
+    4300026: GranVenaCardiaca
+    4300028: Miocardio
+    4300030: VentriculoIzquierdo
+    4300032: heart
+    4300034: VentriculoDerecho
+    4300036: AuriculaDerecha
+    4300038: AuriculaIzquierda
+    4300040: BICUSPIDE
+    4300042: valvola9
+    4300044: TRICUSPIDE
+    4300046: valvola11
+    4300048: valvola8
+    4300050: valvola10
+    4300052: valvola6
+    4300054: valvola7
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material
+    second: {fileID: 2100000, guid: dff8e6308efe0c646afb67a3d9629b57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material24
+    second: {fileID: 2100000, guid: 8462355307a92c847b2340259a5c5a67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material39
+    second: {fileID: 2100000, guid: 9da6c794e85a1654ab5d88a129cad83d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material44
+    second: {fileID: 2100000, guid: 18725830f0d4e26478d9aabeeeb29fb0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material55
+    second: {fileID: 2100000, guid: 9da6c794e85a1654ab5d88a129cad83d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material57
+    second: {fileID: 2100000, guid: 9da6c794e85a1654ab5d88a129cad83d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material61
+    second: {fileID: 2100000, guid: 6717031a76acd8d44b42e1489f8add13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scene_material10
+    second: {fileID: 2100000, guid: 9ce33f73a19718645ba2c401d370546a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scene_material11
+    second: {fileID: 2100000, guid: 3414799b7dd8ca04b99003d0644413c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scene_material12
+    second: {fileID: 2100000, guid: 4f58a34ab0c3ffe41acad39a8cbf429f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scene_material13
+    second: {fileID: 2100000, guid: 4767522385276274ba1a7fa2110978eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scene_material15
+    second: {fileID: 2100000, guid: 99db285f811f9324f8e9dc93db6153ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scene_material16
+    second: {fileID: 2100000, guid: 078e40a6992b0bf4e9b170bdde7b6726, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scene_material17
+    second: {fileID: 2100000, guid: 9273fa8113931e2448a7d5e1ba9bf56b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scene_material8
+    second: {fileID: 2100000, guid: 7a8e2f6022174b042ae8020bae516bc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scene_material9
+    second: {fileID: 2100000, guid: bb3fb9a84a4334046bd193fbfca7f9ac, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.3
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
