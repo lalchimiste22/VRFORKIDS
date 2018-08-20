@@ -462,8 +462,7 @@ public class Recurso : MonoBehaviour {
 
     private void FillOptionList(Contenido contenido)
     {
-        GameObject bp = Instantiate(_blueprintPrefabs[contenido.Tipo]);
-        IRenderOptionFactory factory = bp.GetComponent<RenderOption>().GetFactory();
+        IRenderOptionFactory factory = _blueprintPrefabs[contenido.Tipo].GetComponent<RenderOption>().GetFactory();
         RenderOption[] options = factory.BuildRenderOptions(contenido.Opciones);
 
         foreach(RenderOption Opt in options)
