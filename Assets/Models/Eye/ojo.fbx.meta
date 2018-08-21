@@ -1,0 +1,381 @@
+fileFormatVersion: 2
+guid: 004737b36c051b84d92184828b9013a1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arterie_Left
+    100002: Arterie_Right
+    100004: Chloroid_left
+    100006: ChloroidRight
+    100008: Cornea_Left
+    100010: Cornea_Right
+    100012: Cornea_Whole
+    100014: eye_fluid_Left
+    100016: eye_fluid_Right
+    100018: eye_fluid_Whole
+    100020: lens_left
+    100022: lens_right
+    100024: lens_Whole
+    100026: ligaments_left
+    100028: ligaments_right
+    100030: ligamentsWhole
+    100032: //RootNode
+    100034: retina_left_new
+    100036: retina_right_new
+    100038: Sclera_Left
+    100040: sclera_right
+    100042: Vein_Left_Bottom
+    100044: Vein_Left_Top
+    100046: VeinRightBottom
+    100048: VeinRighTop
+    100050: Vitreous_left
+    100052: Vitreous_right
+    100054: Vitreous_whole
+    400000: Arterie_Left
+    400002: Arterie_Right
+    400004: Chloroid_left
+    400006: ChloroidRight
+    400008: Cornea_Left
+    400010: Cornea_Right
+    400012: Cornea_Whole
+    400014: eye_fluid_Left
+    400016: eye_fluid_Right
+    400018: eye_fluid_Whole
+    400020: lens_left
+    400022: lens_right
+    400024: lens_Whole
+    400026: ligaments_left
+    400028: ligaments_right
+    400030: ligamentsWhole
+    400032: //RootNode
+    400034: retina_left_new
+    400036: retina_right_new
+    400038: Sclera_Left
+    400040: sclera_right
+    400042: Vein_Left_Bottom
+    400044: Vein_Left_Top
+    400046: VeinRightBottom
+    400048: VeinRighTop
+    400050: Vitreous_left
+    400052: Vitreous_right
+    400054: Vitreous_whole
+    2100000: ScleraLeft
+    2100002: Veins
+    2100004: VeinsLeft2
+    2100006: VeinsLeft
+    2100008: Viterus_FluidLeft
+    2100010: Viterus_Fluid
+    2100012: Viterus_FluidWhole
+    2100014: Eye_FluidLeft
+    2100016: Eye_Fluid
+    2100018: Eye_FluidWhole
+    2100020: Lens2Whole
+    2100022: Lens2Left
+    2100024: Lens2
+    2100026: LigamentsWhole
+    2100028: LigamentsLeft
+    2100030: Ligaments
+    2100032: retinaLeft
+    2100034: retina
+    2100036: Sclera
+    2100038: CorneaWhole
+    2100040: Cornea
+    2100042: CorneaLeft
+    2100044: 2iris_ChloreidLeft
+    2100046: 2iris_Chloreid
+    2100048: Artrerie
+    2100050: ArtrerieLeft
+    2300000: Arterie_Left
+    2300002: Arterie_Right
+    2300004: Chloroid_left
+    2300006: ChloroidRight
+    2300008: Cornea_Left
+    2300010: Cornea_Right
+    2300012: Cornea_Whole
+    2300014: eye_fluid_Left
+    2300016: eye_fluid_Right
+    2300018: eye_fluid_Whole
+    2300020: lens_left
+    2300022: lens_right
+    2300024: lens_Whole
+    2300026: ligaments_left
+    2300028: ligaments_right
+    2300030: ligamentsWhole
+    2300032: retina_left_new
+    2300034: retina_right_new
+    2300036: Sclera_Left
+    2300038: sclera_right
+    2300040: Vein_Left_Bottom
+    2300042: Vein_Left_Top
+    2300044: VeinRightBottom
+    2300046: VeinRighTop
+    2300048: Vitreous_left
+    2300050: Vitreous_right
+    2300052: Vitreous_whole
+    3300000: Arterie_Left
+    3300002: Arterie_Right
+    3300004: Chloroid_left
+    3300006: ChloroidRight
+    3300008: Cornea_Left
+    3300010: Cornea_Right
+    3300012: Cornea_Whole
+    3300014: eye_fluid_Left
+    3300016: eye_fluid_Right
+    3300018: eye_fluid_Whole
+    3300020: lens_left
+    3300022: lens_right
+    3300024: lens_Whole
+    3300026: ligaments_left
+    3300028: ligaments_right
+    3300030: ligamentsWhole
+    3300032: retina_left_new
+    3300034: retina_right_new
+    3300036: Sclera_Left
+    3300038: sclera_right
+    3300040: Vein_Left_Bottom
+    3300042: Vein_Left_Top
+    3300044: VeinRightBottom
+    3300046: VeinRighTop
+    3300048: Vitreous_left
+    3300050: Vitreous_right
+    3300052: Vitreous_whole
+    4300000: Sclera_Left
+    4300002: VeinRighTop
+    4300004: VeinRightBottom
+    4300006: Vein_Left_Bottom
+    4300008: Vein_Left_Top
+    4300010: Vitreous_left
+    4300012: Vitreous_right
+    4300014: Vitreous_whole
+    4300016: eye_fluid_Left
+    4300018: eye_fluid_Right
+    4300020: eye_fluid_Whole
+    4300022: lens_Whole
+    4300024: lens_left
+    4300026: lens_right
+    4300028: ligamentsWhole
+    4300030: ligaments_left
+    4300032: ligaments_right
+    4300034: retina_left_new
+    4300036: retina_right_new
+    4300038: sclera_right
+    4300040: Cornea_Whole
+    4300042: Cornea_Right
+    4300044: Cornea_Left
+    4300046: Chloroid_left
+    4300048: ChloroidRight
+    4300050: Arterie_Right
+    4300052: Arterie_Left
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 2iris_Chloreid
+    second: {fileID: 2100000, guid: 7b31eaed287898b4994c7a23c77a06e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 2iris_ChloreidLeft
+    second: {fileID: 2100000, guid: 79299336caa1c2e4e918679bb7093241, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Artrerie
+    second: {fileID: 2100000, guid: 9eccaf2105e8d2a45943a14144523da8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ArtrerieLeft
+    second: {fileID: 2100000, guid: 8778a129a1c83774f928bdbf8f610c1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cornea
+    second: {fileID: 2100000, guid: 2a9a252b375d635408cb795d28c3fabf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CorneaLeft
+    second: {fileID: 2100000, guid: e4a1feb23b0a09d43a0fe8a8335ba445, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CorneaWhole
+    second: {fileID: 2100000, guid: 83e40567065a1354dbcd4132b415f8b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eye_Fluid
+    second: {fileID: 2100000, guid: f11e5e703d0c88241b304124fafb6009, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eye_FluidLeft
+    second: {fileID: 2100000, guid: d680cf5c6bb588b4fbf49eda210538c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eye_FluidWhole
+    second: {fileID: 2100000, guid: e993beba0d9c26a49a17c6853bafb890, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lens2
+    second: {fileID: 2100000, guid: f21249d98f0ca7349b144f08dca8ff3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lens2Left
+    second: {fileID: 2100000, guid: 9cfa426371079cf4ead246a729e57e64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lens2Whole
+    second: {fileID: 2100000, guid: e6f46ac3dc7f49e449cc883725e11c33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ligaments
+    second: {fileID: 2100000, guid: 3e90f095f849eee40b041e8072adde6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LigamentsLeft
+    second: {fileID: 2100000, guid: 93d7c4e87c9c9044484cd920ed0d653a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LigamentsWhole
+    second: {fileID: 2100000, guid: 296472a934ef58748a79a046c1db7865, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sclera
+    second: {fileID: 2100000, guid: e8d03a1655c5dd04c8709b5aa258c3c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScleraLeft
+    second: {fileID: 2100000, guid: 295f070a0b3666146bbab29fdb706b66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Veins
+    second: {fileID: 2100000, guid: b73d2f8b57887714fa9cddf967ffea72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VeinsLeft
+    second: {fileID: 2100000, guid: 2219f4ed03a220f42a3d926d52c125fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VeinsLeft2
+    second: {fileID: 2100000, guid: 4cb1dfb81fde6df44a295f0eb9783073, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Viterus_Fluid
+    second: {fileID: 2100000, guid: 5abc6fdfd7c308147963a04037871647, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Viterus_FluidLeft
+    second: {fileID: 2100000, guid: fba4bdce619293843884e01de735b6e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Viterus_FluidWhole
+    second: {fileID: 2100000, guid: 964adae36b2343e4ca605b244d045112, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: retina
+    second: {fileID: 2100000, guid: 498268f6121427341a90b16f54ed5fa9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: retinaLeft
+    second: {fileID: 2100000, guid: 488b5ca0dbe1a8b4f8feb6ec295c061f, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 2
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
