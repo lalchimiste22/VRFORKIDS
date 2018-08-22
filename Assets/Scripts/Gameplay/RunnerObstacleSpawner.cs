@@ -32,6 +32,11 @@ public class RunnerObstacleSpawner : MonoBehaviour {
     public RunnerObstacleMovement[] Obstacles;
 
     /// <summary>
+    /// The character controller that will play this game
+    /// </summary>
+    public RunnerCharacterController CharacterController;
+
+    /// <summary>
     /// Used for kill plane and recognizing obstacles as a whole
     /// </summary>
     [TagSelector]
@@ -43,6 +48,11 @@ public class RunnerObstacleSpawner : MonoBehaviour {
     public VarianceValue SpawnPeriod;
 
     /// <summary>
+    /// If this spawner is currently activated
+    /// </summary>
+    public bool IsSpawning = true;
+
+    /// <summary>
     /// Remaining time for a spawnable object to appear
     /// </summary>
     private float _spawnRemainingTime;
@@ -52,19 +62,19 @@ public class RunnerObstacleSpawner : MonoBehaviour {
 
         //Should start
         _spawnRemainingTime = SpawnPeriod.Get();
+
+        if (!CharacterController)
+            Debug.LogError("Must bind a character controller");
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-        UpdateFloorGeneration();
+        if (!IsSpawning)
+            return;
+
         UpdateObstacleGeneration();
 	}
-
-    void UpdateFloorGeneration()
-    {
-
-    }
 
     void UpdateObstacleGeneration()
     {
@@ -87,6 +97,10 @@ public class RunnerObstacleSpawner : MonoBehaviour {
             obstacle.transform.position = this.transform.position;
             obstacle.Direction = this.transform.forward;
             obstacle.tag = ObstacleTag;
+            obstacle.CharacterController = CharacterController;
+
+            //Reset control flags
+            obstacle.Reset();
         }
 
         _spawnRemainingTime -= Time.deltaTime;

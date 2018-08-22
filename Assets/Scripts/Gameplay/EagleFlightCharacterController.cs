@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class EagleFlightCharacterController : MonoBehaviour {
+public class EagleFlightCharacterController : RunnerCharacterController {
 
     public enum InputMode
     {
@@ -28,22 +28,43 @@ public class EagleFlightCharacterController : MonoBehaviour {
 
     //Only for Tilt mode
     public float TiltSensitivity = 0.01f;
+    
+    //The maximum amount of rotation the pawn will perform when confronted with a maximum directional input
+    public Vector2 PawnMaxRotationInDegrees = new Vector2(45.0f, 45.0f);
+
+    //Offset of the pawn when possesed by this controller
+    private Vector3 _pawnOffset;
 
     //Rigidbody used for collision detection
     private Rigidbody _rigidbody;
+
+    //Collider used to hit obstacles
+    private Collider _cachedPawnCollider;
 
     //Init
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
+
+        if (Pawn != null)
+        {
+            _pawnOffset = transform.InverseTransformPoint(Pawn.position);
+            _cachedPawnCollider = Pawn.GetComponentInChildren<Collider>();
+        }
+        else
+        {
+            _cachedPawnCollider = GetComponentInChildren<Collider>();
+        }
     }
 
     // Update is called once per frame
     void Update () {
+        if (!HasControl)
+            return;
 
         ProcessGazeInput();
         UpdateElevation();
-
+        UpdatePawn();
 	}
     
     void ProcessGazeInput()
@@ -92,5 +113,22 @@ public class EagleFlightCharacterController : MonoBehaviour {
         //transform.position += new Vector3(_directionalInput.x * ElevationSpeed, _directionalInput.y * ElevationSpeed, ForwardSpeed) * Time.deltaTime;
         //_rigidbody.AddForce(new Vector3(_directionalInput.x * ElevationSpeed, _directionalInput.y * ElevationSpeed, ForwardSpeed) * Time.deltaTime);
         _rigidbody.velocity = new Vector3(_directionalInput.x * ElevationSpeed, _directionalInput.y * ElevationSpeed, ForwardSpeed);// * Time.deltaTime;
+    }
+
+    void UpdatePawn()
+    {
+        if (!Pawn)
+            return;
+
+        Pawn.position = transform.TransformPoint(_pawnOffset);
+
+        //Update rotation to match the directional input
+        Vector2 rotation = PawnMaxRotationInDegrees * _directionalInput;
+        Pawn.localEulerAngles = new Vector3(-rotation.y, Pawn.localEulerAngles.y, -rotation.x);
+    }
+
+    public override Collider GetControlledPawnCollider()
+    {
+        return _cachedPawnCollider;
     }
 }

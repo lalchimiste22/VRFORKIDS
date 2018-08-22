@@ -39,7 +39,7 @@ public class EaseMoveTo : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         if (!bEasingIn)
             return;
 
@@ -53,7 +53,8 @@ public class EaseMoveTo : MonoBehaviour {
         gameObject.transform.position = nextPosition;
         gameObject.transform.eulerAngles = new Vector3(nextAngleX, nextAngleY, nextAngleZ);
 
-        if (Mathf.Abs((nextPosition - targetTransform.position).magnitude) < 0.01 && Mathf.Abs(nextAngleX - targetTransform.rotation.eulerAngles.x) < 0.01 && Mathf.Abs(nextAngleY - targetTransform.rotation.eulerAngles.y) < 0.01 && Mathf.Abs(nextAngleZ - targetTransform.rotation.eulerAngles.z) < 0.01)
+        if (Mathf.Abs((nextPosition - targetTransform.position).magnitude) < 0.1 && Mathf.Abs(nextAngleX - targetTransform.rotation.eulerAngles.x) < 0.1 && Mathf.Abs(nextAngleY - targetTransform.rotation.eulerAngles.y) < 0.1 && Mathf.Abs(nextAngleZ - targetTransform.rotation.eulerAngles.z) < 0.1)
+        //if(CurrentTime == SmoothTime)
         {
             bEasingIn = false;
 
