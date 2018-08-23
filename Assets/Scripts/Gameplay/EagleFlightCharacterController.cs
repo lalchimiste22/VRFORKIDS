@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
 public class EagleFlightCharacterController : RunnerCharacterController {
 
     public enum InputMode
@@ -15,7 +14,7 @@ public class EagleFlightCharacterController : RunnerCharacterController {
     private Vector2 _directionalInput;
 
     //The distance from the camera to the input plane
-    public float InpudPlaneDistance = 1.0f;
+    public float InputPlaneDistance = 1.0f;
 
     //Speed on which to change the elevation
     public float ElevationSpeed = 2.0f;
@@ -35,17 +34,12 @@ public class EagleFlightCharacterController : RunnerCharacterController {
     //Offset of the pawn when possesed by this controller
     private Vector3 _pawnOffset;
 
-    //Rigidbody used for collision detection
-    private Rigidbody _rigidbody;
-
     //Collider used to hit obstacles
     private Collider _cachedPawnCollider;
 
     //Init
     private void Start()
     {
-        _rigidbody = GetComponent<Rigidbody>();
-
         if (Pawn != null)
         {
             _pawnOffset = transform.InverseTransformPoint(Pawn.position);
@@ -97,9 +91,9 @@ public class EagleFlightCharacterController : RunnerCharacterController {
                     return;
 
                 //TODO: Maybe abort if the input is greater than a certain distance
-                float gazeToPlaneDistance = InpudPlaneDistance / dotResult;
+                float gazeToPlaneDistance = InputPlaneDistance / dotResult;
 
-                //Get the projection veector on the input plane
+                //Get the projection vector on the input plane
                 _directionalInput = cameraForward * gazeToPlaneDistance;
                 _directionalInput.x = Mathf.Clamp(_directionalInput.x, -1.0f, 1.0f);
                 _directionalInput.y = Mathf.Clamp(_directionalInput.y, -1.0f, 1.0f);
@@ -110,9 +104,9 @@ public class EagleFlightCharacterController : RunnerCharacterController {
 
     void UpdateElevation()
     {
-        //transform.position += new Vector3(_directionalInput.x * ElevationSpeed, _directionalInput.y * ElevationSpeed, ForwardSpeed) * Time.deltaTime;
+        transform.position += new Vector3(_directionalInput.x * ElevationSpeed, _directionalInput.y * ElevationSpeed, ForwardSpeed) * Time.deltaTime;
         //_rigidbody.AddForce(new Vector3(_directionalInput.x * ElevationSpeed, _directionalInput.y * ElevationSpeed, ForwardSpeed) * Time.deltaTime);
-        _rigidbody.velocity = new Vector3(_directionalInput.x * ElevationSpeed, _directionalInput.y * ElevationSpeed, ForwardSpeed);// * Time.deltaTime;
+        //_rigidbody.velocity = new Vector3(_directionalInput.x * ElevationSpeed, _directionalInput.y * ElevationSpeed, ForwardSpeed);// * Time.deltaTime;
     }
 
     void UpdatePawn()

@@ -52,7 +52,7 @@ public class RunnerObstacleMovement : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other == CharacterController.GetControlledPawnCollider())
+        if(CharacterController && other == CharacterController.GetControlledPawnCollider())
         {
             _hasCollided = true;
             Debug.Log("BOOM");
