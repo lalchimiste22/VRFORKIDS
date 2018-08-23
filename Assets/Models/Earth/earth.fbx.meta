@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: ea4dd435fc1c56843aedcecc8c0b0a0d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: atmosfera
+    100002: atmosferic
+    100004: atmosferic_mitad
+    100006: cloud
+    100008: cloudmitad
+    100010: earth
+    100012: //RootNode
+    100014: earthmitad
+    100016: litosfera
+    100018: manto inferior
+    100020: manto superior
+    100022: nucleo
+    400000: atmosfera
+    400002: atmosferic
+    400004: atmosferic_mitad
+    400006: cloud
+    400008: cloudmitad
+    400010: earth
+    400012: //RootNode
+    400014: earthmitad
+    400016: litosfera
+    400018: manto inferior
+    400020: manto superior
+    400022: nucleo
+    2100000: t_ramp
+    2100002: Material.003
+    2100004: T_cloudtierra
+    2100006: t_albedotierra
+    2100008: t_groundtierra
+    2100010: t_magmatierra
+    2100012: T_magmatierra
+    2300000: atmosfera
+    2300002: atmosferic
+    2300004: atmosferic_mitad
+    2300006: cloud
+    2300008: cloudmitad
+    2300010: earth
+    2300012: earthmitad
+    2300014: litosfera
+    2300016: manto inferior
+    2300018: manto superior
+    2300020: nucleo
+    3300000: atmosfera
+    3300002: atmosferic
+    3300004: atmosferic_mitad
+    3300006: cloud
+    3300008: cloudmitad
+    3300010: earth
+    3300012: earthmitad
+    3300014: litosfera
+    3300016: manto inferior
+    3300018: manto superior
+    3300020: nucleo
+    4300000: atmosfera
+    4300002: atmosferic
+    4300004: cloud
+    4300006: cloudmitad
+    4300008: earth
+    4300010: earthmitad
+    4300012: litosfera
+    4300014: manto inferior
+    4300016: manto superior
+    4300018: nucleo
+    4300020: atmosferic_mitad
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 32fe72d6c6695004aad674b187dfb8d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_cloudtierra
+    second: {fileID: 2100000, guid: 3901e83dece28c1429e243768e4105cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_magmatierra
+    second: {fileID: 2100000, guid: 904d1e7b38e74484486bf96cae24ab64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: t_albedotierra
+    second: {fileID: 2100000, guid: d1d92e694c718964d8a64dc6e2d313b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: t_groundtierra
+    second: {fileID: 2100000, guid: c1961df08ab872445ab7d1086b0ccf7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: t_magmatierra
+    second: {fileID: 2100000, guid: 904d1e7b38e74484486bf96cae24ab64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: t_ramp
+    second: {fileID: 2100000, guid: 17d6b76596c08a54cb51c009b555760a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 5
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
