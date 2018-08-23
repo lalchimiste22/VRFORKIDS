@@ -2,7 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 public class TreadmillPanner : MonoBehaviour {
+
+    public static readonly Vector3 GIZMO_SIZE = new Vector3(5.0f, 0.1f, 50.0f);
 
     //Blueprint Prefabs to use as base for the treadmill
     public MeshRenderer[] GroundBlueprints;
@@ -18,6 +24,21 @@ public class TreadmillPanner : MonoBehaviour {
 
     //Points to the last generated treadmill section
     private int _currentIndex;
+
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(0, 1, 0, 0.5F);
+
+        Matrix4x4 rotationMatrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.lossyScale);
+        //Gizmos.matrix = rotationMatrix;
+
+        Vector3 origin = transform.localPosition + transform.forward * GIZMO_SIZE.z / 2.0f;
+        Debug.Log(origin);
+        Gizmos.DrawCube(origin, GIZMO_SIZE);
+        Gizmos.DrawWireCube(origin, GIZMO_SIZE);
+    }
+#endif
 
     void Start()
     {
