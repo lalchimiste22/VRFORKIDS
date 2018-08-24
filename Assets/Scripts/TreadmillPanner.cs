@@ -8,7 +8,7 @@ using UnityEditor;
 
 public class TreadmillPanner : MonoBehaviour {
 
-    public static readonly Vector3 GIZMO_SIZE = new Vector3(5.0f, 0.1f, 50.0f);
+    public static readonly Vector3 GIZMO_SIZE = new Vector3(5.0f, 0.1f, 200.0f);
 
     //Blueprint Prefabs to use as base for the treadmill
     public MeshRenderer[] GroundBlueprints;
@@ -33,7 +33,7 @@ public class TreadmillPanner : MonoBehaviour {
         Matrix4x4 rotationMatrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.lossyScale);
         //Gizmos.matrix = rotationMatrix;
 
-        Vector3 origin = transform.localPosition + transform.forward * GIZMO_SIZE.z / 2.0f;
+        Vector3 origin = transform.position + transform.forward * GIZMO_SIZE.z / 2.0f;
         Debug.Log(origin);
         Gizmos.DrawCube(origin, GIZMO_SIZE);
         Gizmos.DrawWireCube(origin, GIZMO_SIZE);

@@ -104,9 +104,12 @@ public class EagleFlightCharacterController : RunnerCharacterController {
 
     void UpdateElevation()
     {
-        transform.position += new Vector3(_directionalInput.x * ElevationSpeed, _directionalInput.y * ElevationSpeed, ForwardSpeed) * Time.deltaTime;
-        //_rigidbody.AddForce(new Vector3(_directionalInput.x * ElevationSpeed, _directionalInput.y * ElevationSpeed, ForwardSpeed) * Time.deltaTime);
-        //_rigidbody.velocity = new Vector3(_directionalInput.x * ElevationSpeed, _directionalInput.y * ElevationSpeed, ForwardSpeed);// * Time.deltaTime;
+        Vector3 newPosition = transform.position + new Vector3(_directionalInput.x * ElevationSpeed, _directionalInput.y * ElevationSpeed, ForwardSpeed) * Time.deltaTime;
+        
+        if(RunnerGameMode.Instance.IsPointInsidePlayArea(newPosition))
+        {
+            transform.position = newPosition;
+        }
     }
 
     void UpdatePawn()

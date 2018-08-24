@@ -161,7 +161,7 @@ public class RunnerObstacleSpawner : MonoBehaviour {
 
     void UpdateObstacleGeneration()
     {
-        if (Obstacles.Length == 0)
+        if (SpawnInfo.Length == 0)
             return;
 
         if (_spawnRemainingTime <= 0)

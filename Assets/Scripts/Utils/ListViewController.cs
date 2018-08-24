@@ -33,7 +33,9 @@ public class ListViewController : MonoBehaviour {
 
     private void Update()
     {
-        if(bNeedsScroll)
+        RecalculateRequirements();
+
+        if (bNeedsScroll)
         {
             UpButton.gameObject.SetActive(ScrollRect.verticalNormalizedPosition < 1.0f);
             DownButton.gameObject.SetActive(ScrollRect.verticalNormalizedPosition > 0.0f);
@@ -80,13 +82,6 @@ public class ListViewController : MonoBehaviour {
 
     private void RecalculateRequirements()
     {
-        float sizeY = 0.0f;
-        RectTransform[] children = Content.GetComponentsInChildren<RectTransform>();
-        foreach(RectTransform r in children)
-        {
-            sizeY += r.sizeDelta.y;
-        }
-
-        bNeedsScroll = sizeY < ScrollRectTransform.sizeDelta.y;// Content.sizeDelta.y > ScrollRectTransform.sizeDelta.y;
+        bNeedsScroll = Content.rect.height > ScrollRectTransform.rect.height;
     }
 }

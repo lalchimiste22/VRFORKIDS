@@ -313,7 +313,7 @@ public class Recurso : MonoBehaviour {
 
         //Look for the optionlist
         ListController = transform.GetComponentInChildren<ListViewController>(true);
-        OptionListWrapper = ListController.transform.parent.parent.gameObject; //Looks awful, but the scroll has always this structure
+        OptionListWrapper = ListController.transform.parent.gameObject; //Looks awful, but the scroll has always this structure
 
 
         if (!TitleText || !DetailText || !ImageWrapper || !OptionListWrapper || !ListController)

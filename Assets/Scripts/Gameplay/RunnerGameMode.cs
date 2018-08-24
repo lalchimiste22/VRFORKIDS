@@ -8,7 +8,9 @@ using UnityEditor;
 
 public class RunnerGameMode : MonoBehaviour {
 
-    public static readonly int PLAYAREA_LENGTH = 50;
+    public static readonly int PLAYAREA_LENGTH = 150;
+
+    public float KillAreaDistance = -50.0f;
 
     //Singleton
     public static RunnerGameMode Instance { get; private set; }
@@ -44,11 +46,18 @@ public class RunnerGameMode : MonoBehaviour {
         Matrix4x4 rotationMatrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.lossyScale);
         Gizmos.matrix = rotationMatrix;
 
-        Vector3 origin = transform.position;
-        Vector3 size = new Vector3(PlayArea.x,PlayArea.y, PLAYAREA_LENGTH);
+        Vector3 spawnerLocalPosition = transform.InverseTransformPoint(Spawner.transform.position);
+        Vector3 size = new Vector3(PlayArea.x, PlayArea.y, (spawnerLocalPosition.z - KillAreaDistance));
+
+        Vector3 origin = transform.TransformPoint(new Vector3(0.0f, 0.0f, spawnerLocalPosition.z + KillAreaDistance) / 2); //Middle point
 
         Gizmos.DrawCube(origin, size);
         Gizmos.DrawWireCube(origin, size);
+
+        //Draw the kill area
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawCube(transform.position + Vector3.forward * KillAreaDistance, new Vector3(PlayArea.x, PlayArea.y, 0.1f));
+
     }
 #endif
 
@@ -100,5 +109,23 @@ public class RunnerGameMode : MonoBehaviour {
         Spawner.IsSpawning = false;
 
         ChallengeResource.Show(_currentChallengePage);
+    }
+
+    public bool IsPointInsidePlayArea(Vector3 Point)
+    {
+        Vector3 localPosition = transform.InverseTransformPoint(Point);
+
+        //Important bits are the X,Y coordinates only
+        Vector3 minPosition = transform.position - new Vector3(PlayArea.x, PlayArea.y) / 2;
+        Vector3 maxPosition = transform.position + new Vector3(PlayArea.x, PlayArea.y) / 2;
+
+        return localPosition.x > minPosition.x && localPosition.x < maxPosition.x && localPosition.y > minPosition.y && localPosition.y < maxPosition.y;
+    }
+
+    public bool DidPassKillPlane(Vector3 Position)
+    {
+        Vector3 localPosition = transform.InverseTransformPoint(Position);
+
+        return KillAreaDistance > 0.0f ? localPosition.z > KillAreaDistance : localPosition.z < KillAreaDistance;
     }
 }

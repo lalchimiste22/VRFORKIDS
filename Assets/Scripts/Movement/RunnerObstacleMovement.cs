@@ -36,6 +36,16 @@ public class RunnerObstacleMovement : MonoBehaviour {
             RunnerGameMode.Instance.IncrementScore();
             _pendingClearance = false;
         }
+
+        if(RunnerGameMode.Instance.DidPassKillPlane(transform.position))
+        {
+            PooledObject pooled = GetComponent<PooledObject>();
+
+            if (pooled)
+                pooled.IsPooled = true;
+            else
+                Destroy(gameObject);
+        }
     }
 
     private bool DidPassPlayerPawn()
