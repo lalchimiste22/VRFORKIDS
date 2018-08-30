@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: f110e87416003a04f9ff382f8d47677b
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: antera
     100002: antera.002
@@ -31,6 +31,8 @@ ModelImporter:
     100050: saco.004
     100052: semilla
     100054: tallo
+    100056: flor externa
+    100058: flor interna
     400000: antera
     400002: antera.002
     400004: antera.004
@@ -59,6 +61,8 @@ ModelImporter:
     400050: saco.004
     400052: semilla
     400054: tallo
+    400056: flor externa
+    400058: flor interna
     2100000: material flor
     2300000: antera
     2300002: antera.002
@@ -141,10 +145,17 @@ ModelImporter:
     4300048: pistilo bg
     4300050: estambre
     4300052: tallo
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material flor
+    second: {fileID: 2100000, guid: 658511c8d9e85a74b8ee1ad88730afc0, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -157,12 +168,15 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -170,22 +184,30 @@ ModelImporter:
     globalScale: 20
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
