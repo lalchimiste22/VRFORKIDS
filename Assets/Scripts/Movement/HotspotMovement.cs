@@ -28,7 +28,22 @@ public class HotspotMovement : MonoBehaviour {
     /// <summary>
     /// Current hotspot enabled, stored for sending messages internally
     /// </summary>
-    private static List<HotspotMovement> ActiveHotspots;
+    public static List<HotspotMovement> ActiveHotspots
+    {
+        get
+        {
+            //Lazy loaded
+            if (_activeHotspots == null)
+                _activeHotspots = new List<HotspotMovement>();
+
+            return _activeHotspots;
+        }
+
+        private set { }
+    }
+
+    //Internal member
+    private static List<HotspotMovement> _activeHotspots;
 
     /// <summary>
     /// Used for lazy loading dependencies
@@ -70,16 +85,10 @@ public class HotspotMovement : MonoBehaviour {
         ActiveHotspots.Remove(hotspot);
     }
 
-    public void Awake()
-    {
-        if (ActiveHotspots == null)
-            ActiveHotspots = new List<HotspotMovement>();
-    }
-
     private void Initialize()
     {
        _playerObject = MyManager.Instance.playerGameObject.GetComponent<EaseMoveTo>();
-
+        
         if (!_playerObject)
             Debug.LogError("No player object with EaseMovment found");
 
