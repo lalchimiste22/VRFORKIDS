@@ -36,6 +36,11 @@ public class ZoomInDetail : MonoBehaviour {
     public GameObject ZoomCanvas;
 
     /// <summary>
+    /// If the canvas should start hidden 
+    /// </summary>
+    public bool AutoHideCanvas = true;
+
+    /// <summary>
     /// Exit point
     /// </summary>
     private Trans ExitPoint;
@@ -68,6 +73,9 @@ public class ZoomInDetail : MonoBehaviour {
         if (!_playerObject)
             Debug.LogError("No player object with EaseMovment found");
 
+        if (AutoHideCanvas && ZoomCanvas)
+            ZoomCanvas.SetActive(false);
+
         bPendingInitialization = false;
     }
 
@@ -86,7 +94,7 @@ public class ZoomInDetail : MonoBehaviour {
         else
             ExitPoint = new Trans(ExitTransform);
 
-        _playerObject.SmoothTransport(new Trans(TargetPosition),-1,null,!ShouldForceRotation);
+        _playerObject.SmoothTransport(new Trans(TargetPosition ? TargetPosition : gameObject.transform),-1,null,!ShouldForceRotation);
 
         if (ZoomCanvas)
             ZoomCanvas.SetActive(true);
