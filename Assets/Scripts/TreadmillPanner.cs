@@ -34,7 +34,7 @@ public class TreadmillPanner : MonoBehaviour {
         //Gizmos.matrix = rotationMatrix;
 
         Vector3 origin = transform.position + transform.forward * GIZMO_SIZE.z / 2.0f;
-        Debug.Log(origin);
+        //Debug.Log(origin);
         Gizmos.DrawCube(origin, GIZMO_SIZE);
         Gizmos.DrawWireCube(origin, GIZMO_SIZE);
     }
@@ -78,7 +78,7 @@ public class TreadmillPanner : MonoBehaviour {
             renderer.transform.position = transform.position + transform.forward * forwardLength;
 
             //Add the length
-            Debug.Log("Bounds: " +renderer.bounds.size);
+            //Debug.Log("Bounds: " +renderer.bounds.size);
             forwardLength += renderer.bounds.size.z;
         }
 

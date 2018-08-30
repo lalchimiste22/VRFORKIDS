@@ -7,10 +7,8 @@ using UnityEditor;
 #endif
 
 public class RunnerGameMode : MonoBehaviour {
-
-    public static readonly int PLAYAREA_LENGTH = 150;
-
-    public float KillAreaDistance = -50.0f;
+    
+    public float KillAreaZLocation = -50.0f;
 
     //Singleton
     public static RunnerGameMode Instance { get; private set; }
@@ -34,7 +32,7 @@ public class RunnerGameMode : MonoBehaviour {
     public Vector2 PlayArea = new Vector2(3.0f,3.0f);
 
     //Current score needed
-    private int _scoreForNextChallenge = 3;
+    private int _scoreForNextChallenge = 0;
     private int _accumulatedScore = 0;
     private int _currentChallengePage = 0;
 
@@ -47,16 +45,16 @@ public class RunnerGameMode : MonoBehaviour {
         Gizmos.matrix = rotationMatrix;
 
         Vector3 spawnerLocalPosition = transform.InverseTransformPoint(Spawner.transform.position);
-        Vector3 size = new Vector3(PlayArea.x, PlayArea.y, (spawnerLocalPosition.z - KillAreaDistance));
+        Vector3 size = new Vector3(PlayArea.x, PlayArea.y, (spawnerLocalPosition.z - KillAreaZLocation));
 
-        Vector3 origin = transform.TransformPoint(new Vector3(0.0f, 0.0f, spawnerLocalPosition.z + KillAreaDistance) / 2); //Middle point
+        Vector3 origin = transform.TransformPoint(new Vector3(0.0f, 0.0f, spawnerLocalPosition.z + KillAreaZLocation) / 2); //Middle point
 
         Gizmos.DrawCube(origin, size);
         Gizmos.DrawWireCube(origin, size);
 
         //Draw the kill area
         Gizmos.color = Color.yellow;
-        Gizmos.DrawCube(transform.position + Vector3.forward * KillAreaDistance, new Vector3(PlayArea.x, PlayArea.y, 0.1f));
+        Gizmos.DrawCube(transform.position + Vector3.forward * KillAreaZLocation, new Vector3(PlayArea.x, PlayArea.y, 0.1f));
 
     }
 #endif
@@ -80,6 +78,9 @@ public class RunnerGameMode : MonoBehaviour {
 
         if (!CharacterController)
             Debug.LogError("No character controller bound.");
+
+        //Init the challenge
+        _scoreForNextChallenge = ChallengeScoreRequirements;
     }
 
     // Update is called once per frame
@@ -126,6 +127,6 @@ public class RunnerGameMode : MonoBehaviour {
     {
         Vector3 localPosition = transform.InverseTransformPoint(Position);
 
-        return KillAreaDistance > 0.0f ? localPosition.z > KillAreaDistance : localPosition.z < KillAreaDistance;
+        return KillAreaZLocation > 0.0f ? localPosition.z > KillAreaZLocation : localPosition.z < KillAreaZLocation;
     }
 }

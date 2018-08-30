@@ -13,7 +13,8 @@ public class BeeLevelDirector : MonoBehaviour {
 
 	public void BeginFlowerCinematic()
     {
-        MyManager.Instance.FadeOut(AfterFadeoutContinueFlowerCinematic);
+        //MyManager.Instance.FadeOut(AfterFadeoutContinueFlowerCinematic);
+        //MyManager.Instance.loader.LoadScene("Scenes/Minigames/EagleFlight");
 
     }
 
