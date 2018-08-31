@@ -41,6 +41,16 @@ public class ZoomInDetail : MonoBehaviour {
     public bool AutoHideCanvas = true;
 
     /// <summary>
+    /// If the zoom detail should hide when activating other
+    /// </summary>
+    public bool CloseOnExternalActivation = true;
+
+    /// <summary>
+    /// Currently running instance
+    /// </summary>
+    private static ZoomInDetail CurrentDetail = null;
+
+    /// <summary>
     /// Exit point
     /// </summary>
     private Trans ExitPoint;
@@ -91,6 +101,16 @@ public class ZoomInDetail : MonoBehaviour {
         if(bPendingInitialization)
             Initialize();
 
+        //If already open, ignore
+        if (CurrentDetail == this)
+            return;
+
+        if (CurrentDetail && CurrentDetail.CloseOnExternalActivation)
+            CurrentDetail.ExitZoomDetail();
+
+        //Setup
+        CurrentDetail = this;
+
         if (ExitTransform == null)
             ExitPoint = new Trans(MyManager.Instance.playerGameObject.transform);
         else
@@ -109,6 +129,9 @@ public class ZoomInDetail : MonoBehaviour {
     {
         if (bPendingInitialization)
             Initialize();
+
+        //Remove
+        CurrentDetail = null;
 
         _playerObject.SmoothTransport(ExitPoint, -1, null, !ShouldForceRotation);
 
