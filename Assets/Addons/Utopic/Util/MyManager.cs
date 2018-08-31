@@ -69,7 +69,10 @@ public class MyManager : MonoBehaviour {
 		Time.timeScale = this.timeScale;
 
         //Search for resources that exist on this map
-        StartCoroutine(LoadResources());
+
+        //Needed, as we could override the Manager and on level loaded this could be pending destruction
+        if(this)
+            StartCoroutine(LoadResources());
 	}
 
 	void OnValidate() {
