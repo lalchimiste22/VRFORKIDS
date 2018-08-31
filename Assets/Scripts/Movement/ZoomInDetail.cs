@@ -81,7 +81,9 @@ public class ZoomInDetail : MonoBehaviour {
 
     public void Start()
     {
-        Initialize();
+        //Could have been initialized on a Non monobehaviour method
+        if(bPendingInitialization)
+            Initialize();
     }
 
     public void ShowZoomDetail()

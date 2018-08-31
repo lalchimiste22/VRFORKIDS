@@ -14,6 +14,12 @@ public class RotationControl : MonoBehaviour {
     /// </summary>
     public float AnglePerSecond = 45;
 
+    public void Start()
+    {
+        if (!Target)
+            Debug.LogError("No target for rotation set");
+    }
+
 	// Use this for initialization
 	public void RotateClockwise()
     {
