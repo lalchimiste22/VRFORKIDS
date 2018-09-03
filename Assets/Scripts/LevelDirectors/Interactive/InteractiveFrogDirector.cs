@@ -65,9 +65,9 @@ public class InteractiveFrogDirector : MonoBehaviour {
         _tongueOutside = !_tongueOutside;
 
         if(_tongueOutside)
-            TongueAnimator.Play("frog tongue out");
-        else
             TongueAnimator.Play("frog tongue");
+        else
+            TongueAnimator.Play("frog tongue out");
 
         TongueInfoPoint.SetActive(_tongueOutside);
     }
