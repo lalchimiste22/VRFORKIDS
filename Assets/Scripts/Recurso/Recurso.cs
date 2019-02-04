@@ -18,7 +18,7 @@ public class Recurso : MonoBehaviour {
     public bool bOpenOnStart = false;
     private bool bShown = false;
     private bool bDeferedOpen = false;
-
+    
     public enum TipoContenido
     {
         Texto,
@@ -285,7 +285,7 @@ public class Recurso : MonoBehaviour {
             GoToPage(CurrentPage);
     }
 
-    public void Start()
+    void Awake()
     {
         DetailZoom = GetComponent<ZoomInDetail>();
 
@@ -341,7 +341,7 @@ public class Recurso : MonoBehaviour {
 
     private void Update()
     {
-        if(bDeferedOpen)
+        if(bDeferedOpen && MyManager.Instance.AppMode == ApplicationMode.Normal)
         {
             Show();
             bDeferedOpen = false;

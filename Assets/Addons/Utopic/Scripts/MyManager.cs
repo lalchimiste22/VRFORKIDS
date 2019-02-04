@@ -39,6 +39,9 @@ public class MyManager : MonoBehaviour {
     /* The current application mode */
     public ApplicationMode AppMode { get; private set; }
 
+    /* The current application mode */
+    public string PreviewResourceCode{ get; private set; }
+
     private void Start()
     {
         //When starting, we want to make sure we aren't on a fade image
@@ -59,7 +62,7 @@ public class MyManager : MonoBehaviour {
 
             //This will initialize important values, like the application mode, etc
             InitWebArguments();
-
+            
             //Will need to manage level loading for resources
             UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnLevelLoaded;
 
@@ -126,6 +129,10 @@ public class MyManager : MonoBehaviour {
 
             Debug.Log("Entered application mode: " + AppMode);
         }
+        else if (Key.ToLower() == "code")
+        {
+            PreviewResourceCode = Value;
+        }
     }
 
     // Runs each time a scene is loaded, even when script is using DontDestroyOnLoad().
@@ -144,12 +151,32 @@ public class MyManager : MonoBehaviour {
         //@Note: Support for custom time dilation
 		Time.timeScale = this.timeScale;
 
+        //Start loading resources
+        StartCoroutine(LoadResources());
+
+        //Optionally force opening of preview resource
+        if(MyManager.Instance.AppMode == ApplicationMode.Preview)
+        {
+            string ResourceCode = MyManager.Instance.PreviewResourceCode;
+            Recurso[] Recursos = GameObject.FindObjectsOfType<Recurso>();
+
+            foreach(Recurso r in Recursos)
+            {
+                if(r.Codigo == ResourceCode)
+                {
+                    r.Show();
+                    break;
+                }
+            }
+        }
+
+        //@TODO: this was an old error, currently checking if its solved
         //Needed, as we could override the Manager and on level loaded this could be pending destruction
-        if(this)
+        /*if(this)
         {
             StartCoroutine(LoadResources());
-        }
-	}
+        }*/
+    }
 
 	void OnValidate()
     {

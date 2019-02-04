@@ -1,10 +1,33 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
+#if UNITY_EDITOR
+using UnityEditor;
+using UnityEditor.SceneManagement;
+#endif
+
+[Serializable]
+public class ResourceBakedEntry
+{
+    public ResourceBakedEntry(string InCode, string InPath)
+    {
+        Code = InCode;
+        Path = InPath;
+    }
+
+    /// <summary>
+    /// Code for the index entry
+    /// </summary>
+    public string Code;
+
+    /// <summary>
+    /// Path for the index entry
+    /// </summary>
+    public string Path;
+}
 
 /// <summary>
 /// Holds a resource registry index for knowing in which stage to get an specific resource by its code.
@@ -18,12 +41,16 @@ public class ResourceIndex : MonoBehaviour
     private Dictionary<string, string> IndexMap;
 
     /// <summary>
+    /// List of baked resources for user clarity. They aren't used besides data display.
+    /// </summary>
+    [ReadOnly]
+    public List<ResourceBakedEntry> BakedResources;
+
+#if UNITY_EDITOR
+    /// <summary>
     /// Object that is responsible of baking the resources, as it can change scenes and don't get deleted
     /// </summary>
     private static ResourceBaker Baker = new ResourceBaker();
-
-    //@NOTE: just for testing UNDO history
-    public int test = 0;
 
     /// <summary>
     /// Start the baking process
@@ -40,10 +67,38 @@ public class ResourceIndex : MonoBehaviour
     public void OnCommitBake(Dictionary<string, string> NewIndexMap)
     {
         Undo.RecordObject(this, "Bake resource index");
-        IndexMap = NewIndexMap;
-        test++;
+
+        //Create baked entries
+        BakedResources.Clear();
+        foreach(KeyValuePair<string,string> KVPair in IndexMap)
+        {
+            BakedResources.Add(new ResourceBakedEntry(KVPair.Key, KVPair.Value));
+        }
+    }
+#endif
+
+    private void Awake()
+    {
+        IndexMap = new Dictionary<string, string>(BakedResources.Count);
+        //We need to serialize index mappings
+        foreach(ResourceBakedEntry Entry in BakedResources)
+        {
+            IndexMap.Add(Entry.Code, Entry.Path);
+        }
     }
 
+    /// <summary>
+    /// Obtains the scene path for a given baked resource
+    /// </summary>
+    /// <param name="ResourceCode">Resource code to search for</param>
+    /// <param name="ScenePath">Out scene path</param>
+    /// <returns>If the resource path was found. </returns>
+    public bool FindResourceScene(string ResourceCode, out string ScenePath)
+    {
+        return IndexMap.TryGetValue(ResourceCode, out ScenePath);
+    }
+
+#if UNITY_EDITOR
     /// <summary>
     /// Internal class specialized on building the bake index for the resources.
     /// </summary>
@@ -88,7 +143,11 @@ public class ResourceIndex : MonoBehaviour
         /// Holds the context in which the bake was requested
         /// </summary>
         private ResourceBakeContext BakeContext;
-
+        
+        /// <summary>
+        /// Starts the baking process
+        /// </summary>
+        /// <param name="Context">Context object that called the bake</param>
         public void BeginBake(GameObject Context)
         {
             //Make sure we have a clean bake
@@ -115,6 +174,9 @@ public class ResourceIndex : MonoBehaviour
             UnityEditor.SceneManagement.EditorSceneManager.sceneOpened -= OnBakeLevelOpened;
             UnityEditor.SceneManagement.EditorSceneManager.sceneOpened += OnFinishBakeLevelOpened;
 
+            //Show loading bar
+            EditorUtility.DisplayProgressBar("Baking resources...", "Finishing Bake...", 1.0f);
+
             //Finally open the context scene
             UnityEditor.SceneManagement.EditorSceneManager.OpenScene(BakeContext.CallerScene);
         }
@@ -126,6 +188,9 @@ public class ResourceIndex : MonoBehaviour
         /// <param name="mode"> Mode in which the scene was loaded </param>
         void OnBakeLevelOpened(Scene scene, OpenSceneMode mode)
         {
+            //Update progress
+            EditorUtility.DisplayProgressBar("Baking resources...", "Searching available resources through BuildScenes...", ((float)CurrentBakeScene) / ((float)BuildScenes.Length));
+
             //Resources will most likely be set as inactive, so we need to obtain them using the scene manager
             GameObject[] Roots = UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects();
 
@@ -173,6 +238,10 @@ public class ResourceIndex : MonoBehaviour
             {
                 Debug.LogError("Baking failed, could not locate baking context caller when reloading scene.");
             }
+
+            //Finished, we clear the loading bar
+            EditorUtility.ClearProgressBar();
         }
     }
+#endif
 }

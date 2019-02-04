@@ -13,6 +13,11 @@ public class ApplicationModeRedirector : MonoBehaviour
     /// </summary>
     public string MainScenePath;
 
+    /// <summary>
+    /// Holds an indexed array for the Resource codes and its scenes.
+    /// </summary>
+    public ResourceIndex Index;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,10 +36,20 @@ public class ApplicationModeRedirector : MonoBehaviour
 
     /// <summary>
     /// Redirects to the chosen scene for the preview mode.
-    /// Selection of the resource to focus is done on that level.<
+    /// Selection of the resource to focus is done on that level.
     /// </summary>
     void PerformPreviewRedirection()
     {
-        Debug.Log("Redirecting to preview mode scene");
+        string RedirectPath;
+        string ResourceCode = MyManager.Instance.PreviewResourceCode;
+        if (Index.FindResourceScene(MyManager.Instance.PreviewResourceCode, out RedirectPath))
+        {
+            Debug.Log("Redirecting to preview mode scene");
+            MyManager.Instance.loader.LoadScene(RedirectPath);
+        }
+        else
+        {
+            Debug.LogWarning("Trying to redirect to scene holding resource with code: '" + ResourceCode + "' failed, resource path not found on ResourceIndex");
+        }
     }
 }

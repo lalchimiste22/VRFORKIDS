@@ -247,6 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainScenePath: Scenes/Interactive/MainMenu
+  Index: {fileID: 810927152}
 --- !u!4 &495180778
 Transform:
   m_ObjectHideFlags: 0
@@ -403,6 +404,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 493744eeddb29e64b94f7aa221be91b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BakedResources:
+  - Code: bee02
+    Path: Assets/Scenes/Interactive/bee Interactive unity.unity
 --- !u!4 &810927153
 Transform:
   m_ObjectHideFlags: 0
