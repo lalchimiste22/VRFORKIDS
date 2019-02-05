@@ -93,36 +93,51 @@ public class ZoomInDetail : MonoBehaviour {
     {
         //Could have been initialized on a Non monobehaviour method
         if(bPendingInitialization)
+        {
             Initialize();
+        }
     }
 
     public void ShowZoomDetail()
     {
-        if(bPendingInitialization)
-            Initialize();
+        if(CurrentDetail != this)
+        {
+            //Lazy loading
+            if (bPendingInitialization)
+            {
+                Initialize();
+            }
+                       
+            //Close any open zoom detail that cannot be open when other one is
+            if (CurrentDetail && CurrentDetail.CloseOnExternalActivation)
+            {
+                CurrentDetail.ExitZoomDetail();
+            }
 
-        //If already open, ignore
-        if (CurrentDetail == this)
-            return;
+            //Setup
+            CurrentDetail = this;
+            if (ExitTransform == null)
+            {
+                ExitPoint = new Trans(MyManager.Instance.playerGameObject.transform);
+            }
+            else
+            {
+                ExitPoint = new Trans(ExitTransform);
+            }
 
-        if (CurrentDetail && CurrentDetail.CloseOnExternalActivation)
-            CurrentDetail.ExitZoomDetail();
+            //Queue smooth transport
+            _playerObject.SmoothTransport(new Trans(TargetPosition ? TargetPosition : gameObject.transform), EaseMoveTo.DefaultSmoothTime, null, !ShouldForceRotation);
 
-        //Setup
-        CurrentDetail = this;
+            if (ZoomCanvas)
+            {
+                ZoomCanvas.SetActive(true);
+            }
 
-        if (ExitTransform == null)
-            ExitPoint = new Trans(MyManager.Instance.playerGameObject.transform);
-        else
-            ExitPoint = new Trans(ExitTransform);
-
-        _playerObject.SmoothTransport(new Trans(TargetPosition ? TargetPosition : gameObject.transform),-1,null,!ShouldForceRotation);
-
-        if (ZoomCanvas)
-            ZoomCanvas.SetActive(true);
-
-        if (OnShown != null)
-            OnShown.Invoke();
+            if (OnShown != null)
+            {
+                OnShown.Invoke();
+            }
+        }
     }
 
     public void ExitZoomDetail()

@@ -70,7 +70,7 @@ public class ResourceIndex : MonoBehaviour
 
         //Create baked entries
         BakedResources.Clear();
-        foreach(KeyValuePair<string,string> KVPair in IndexMap)
+        foreach(KeyValuePair<string,string> KVPair in NewIndexMap)
         {
             BakedResources.Add(new ResourceBakedEntry(KVPair.Key, KVPair.Value));
         }

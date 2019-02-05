@@ -25,14 +25,16 @@ public class EaseMoveTo : MonoBehaviour {
     private float velocityAngleX;
     private float velocityAngleY;
     private float velocityAngleZ;
-    public float DefaultSmoothTime = 1.0f;
     private float SmoothTime = 1.0f;
     public float CurrentTime { get; private set; }
     private Action OnCompletion;
     private bool OnlyMovePosition;
 
+    //Static helpers
+    public static float DefaultSmoothTime { get { return -1.0f; } }
+
     // Use this for initialization
-    void Start () {
+    void Awake () {
         _transform = gameObject.transform;
         velocity = Vector3.zero;
         bEasingIn = false;
