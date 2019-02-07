@@ -143,7 +143,9 @@ public class ZoomInDetail : MonoBehaviour {
     public void ExitZoomDetail()
     {
         if (bPendingInitialization)
+        {
             Initialize();
+        }
 
         //Remove
         CurrentDetail = null;

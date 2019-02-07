@@ -3,19 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public struct Trans
-{
-    public Trans(Transform T)
-    {
-        position = T.position;
-        rotation = T.rotation;
-        scale = T.localScale;
-    }
-    public Vector3 position;
-    public Quaternion rotation;
-    public Vector3 scale;
-}
-
 public class EaseMoveTo : MonoBehaviour {
 
     public bool bEasingIn { get; private set; }
@@ -31,7 +18,7 @@ public class EaseMoveTo : MonoBehaviour {
     private bool OnlyMovePosition;
 
     //Static helpers
-    public static float DefaultSmoothTime { get { return -1.0f; } }
+    public static float DefaultSmoothTime { get { return 1.0f; } }
 
     // Use this for initialization
     void Awake () {
@@ -85,7 +72,7 @@ public class EaseMoveTo : MonoBehaviour {
         velocity = Vector3.zero;
         OnlyMovePosition = InOnlyMovePosition;
 
-        SmoothTime = NewSmoothTime == -1.0f ? DefaultSmoothTime : NewSmoothTime;
+        SmoothTime = NewSmoothTime < 0 ? DefaultSmoothTime : NewSmoothTime;
 
     }
 
