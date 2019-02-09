@@ -44,6 +44,11 @@ public class Draggable : MonoBehaviour
     /// </summary>
     public float LerpFactor = 0.1f;
 
+    /// <summary>
+    /// If this draggable behavior is enabled
+    /// </summary>
+    public bool Enabled = true;
+
     // Update is called once per frame
     void Update()
     {
@@ -74,7 +79,7 @@ public class Draggable : MonoBehaviour
     /// </summary>
     public void BeginDragOperation()
     {
-        if(CurrentDragOperation == null)
+        if(Enabled && CurrentDragOperation == null)
         {
             CurrentDragOperation = this;
             OriginalTransform = new Trans(gameObject.transform);
