@@ -10,9 +10,19 @@ using UnityEngine.Events;
 public class Draggable : MonoBehaviour
 {
     /// <summary>
-    /// Called when we actually apply a drag operation
+    /// Called when we actually apply a drag operation.
     /// </summary>
     public UnityEvent OnDragged;
+
+    /// <summary>
+    /// Called when we start a drag operation.
+    /// </summary>
+    public UnityEvent OnDragStart;
+
+    /// <summary>
+    /// Called when we end a drag operation.
+    /// </summary>
+    public UnityEvent OnDragEnd;
 
     /// <summary>
     /// Current drag being performed, must be completed before going to other
@@ -47,7 +57,27 @@ public class Draggable : MonoBehaviour
     /// <summary>
     /// If this draggable behavior is enabled
     /// </summary>
-    public bool Enabled = true;
+    public bool IsDraggable = true;
+
+    /// <summary>
+    /// Optional rigidbody that needs to have its gravity deactivated when dragging.
+    /// </summary>
+    private Rigidbody _rb;
+
+    /// <summary>
+    /// Stored variable for the rigidbody that needs to be recovered after ending the drag operation.
+    /// </summary>
+    private bool _rbUsesGravity;
+
+    private void Start()
+    {
+        _rb = GetComponent<Rigidbody>();
+
+        if(_rb)
+        {
+            _rbUsesGravity = _rb.useGravity;
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -79,11 +109,21 @@ public class Draggable : MonoBehaviour
     /// </summary>
     public void BeginDragOperation()
     {
-        if(Enabled && CurrentDragOperation == null)
+        if(IsDraggable && CurrentDragOperation == null)
         {
             CurrentDragOperation = this;
             OriginalTransform = new Trans(gameObject.transform);
             CameraRelativeQuat = Quaternion.Inverse(Camera.main.transform.rotation) * gameObject.transform.rotation;
+            
+            if(_rb)
+            {
+                _rb.useGravity = false;
+            }
+
+            if(OnDragStart != null)
+            {
+                OnDragStart.Invoke();
+            }
         }
     }
 
@@ -99,6 +139,16 @@ public class Draggable : MonoBehaviour
             transform.localScale = OriginalTransform.scale;
 
             CurrentDragOperation = null;
+
+            if (_rb)
+            {
+                _rb.useGravity = _rbUsesGravity;
+            }
+
+            if (OnDragEnd != null)
+            {
+                OnDragEnd.Invoke();
+            }
         }
     }
 
@@ -110,6 +160,16 @@ public class Draggable : MonoBehaviour
         if(CurrentDragOperation == this)
         {
             CurrentDragOperation = null;
+
+            if (_rb)
+            {
+                _rb.useGravity = _rbUsesGravity;
+            }
+
+            if (OnDragEnd != null)
+            {
+                OnDragEnd.Invoke();
+            }
         }
     }
 }
