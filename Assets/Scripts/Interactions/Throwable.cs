@@ -33,11 +33,6 @@ public class Throwable : MonoBehaviour
     /// </summary>
     public int RenderResolution = 10;
 
-    /// <summary>
-    /// Length of each segments for the arc render
-    /// </summary>
-    public float SegmentSize = 0.25f;
-
     //Control variables
     private bool bDragging = false;
     private float RemainingTime;
@@ -115,17 +110,35 @@ public class Throwable : MonoBehaviour
     Vector3[] GetArcPoints()
     {
         Vector3[] Points = new Vector3[RenderResolution + 1];
-        float RadAngle = Mathf.Deg2Rad * Camera.main.transform.rotation.eulerAngles.x;
+
+        //Camera directional references
+        Vector3 CameraForward = Camera.main.transform.forward;
+        Vector3 CameraHorizontal = (new Vector3(CameraForward.x, 0.0f, CameraForward.z)).normalized;
+        float DegAngle = Vector3.SignedAngle(CameraHorizontal, CameraForward, -Camera.main.transform.right);
+        float RadAngle = Mathf.Deg2Rad * DegAngle;
+
+        Debug.Log(DegAngle);
+
         float Velocity = Impulse / _rb.mass;
         Vector3 OffsetFromCamera = transform.position - Camera.main.transform.position;
+        Quaternion LookRotation = Quaternion.LookRotation(CameraHorizontal, Vector3.up);
+
+        //Projectile range
+        float Distance = Velocity * Velocity * Mathf.Sin(2 * RadAngle) / g;
+        Distance = Distance < 5.0f ? 5.0f : Distance;
 
         for (int i = 0; i <= RenderResolution; i++)
         {
+            float t = (float)i / (float)RenderResolution;
+
             //Calculate on local space
-            float x = i * SegmentSize;
+            float x = t * Distance;
             float y = x * Mathf.Tan(RadAngle) - (g * x * x) / (2 * Mathf.Pow(Mathf.Cos(RadAngle) * Velocity, 2));
 
-            Points[i] = Camera.main.transform.TransformPoint(new Vector3(0.0f, y, x)) + OffsetFromCamera;
+            //Obtain the point in local space, must be rotated towards the X,Z axis
+            Vector3 localPoint = new Vector3(0.0f, y, x);
+
+            Points[i] = LookRotation * localPoint + Camera.main.transform.position + OffsetFromCamera;
         }
 
         return Points;

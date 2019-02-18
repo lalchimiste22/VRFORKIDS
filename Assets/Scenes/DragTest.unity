@@ -788,7 +788,7 @@ MonoBehaviour:
   Delay: 5
   PostThrowDragTime: 3
   RenderResolution: 10
-  SegmentSize: 0.25
+  SegmentSize: 0.75
 --- !u!54 &1177511631
 Rigidbody:
   m_ObjectHideFlags: 0
